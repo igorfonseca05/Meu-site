@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <link rel="stylesheet" href="mobile.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <div data-js="darkenBackground" class="darkenBackground"></div>
+        <span data-js="externalIcon" class="material-symbols-outlined externalMenu menuIcon ">menu</span>
+        <nav data-js="menuMobile" class="menuMobile">
+            <div class="iconsNav">
+                <span data-js="internalIcon" class="material-symbols-outlined menuIcon">menu_open</span>
+                <span class="material-symbols-outlined">
+                    <a class="link" href="#mainSection">
+                        home
+                    </a>
+                </span>
+            </div>
+
+            <ul class="ulList">
+                <li class="liItems">
+                    <a href="#AboutMeSection">
+                        <span class="material-symbols-outlined">person_search</span>
+                        Sobre mim
+                    </a>
+                </li>
+                <li class="liItems">
+                    <a href="#">
+                        <span class="material-symbols-outlined">sdk</span>
+                        Habilidades
+                    </a>
+                </li>
+                <li class="liItems">
+                    <a href="#">
+                        <span class="material-symbols-outlined">folder_open</span>
+                        Portifólio
+                    </a>
+                </li>
+                <li class="liItems">
+                    <a href="#">
+                        <span class="material-symbols-outlined">alternate_email</span>
+                        Contato
+                    </a>
+                </li>
+            </ul>
+            <div class="footerMenuMobile">
+                <p>
+                    <span class="material-symbols-outlined">copyright</span>
+                    Desenvolvido por <a style="margin-left: 4px;" href="#">Igor</a>
+                </p>
+            </div>
+        </nav>
+        <nav style="display: none;" class="menuDesktop">
+            <ul>
+                <li>home</li>
+                <li>Sobre mim</li>
+                <li>Habilidades</li>
+                <li>Portifólio</li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="mainSection" class="mainSection">
+        <div class="mainContainer">
+            <figure class="mainFigure">
+                <h5>Igor Fonseca</h5>
+                <h1 class="mainTitle">Web Dev</h1>
+                <img src="img/bg.png" alt="">
+            </figure>
+            <div class="buttonContainer">
+                <button class="mainButton">Saiba mais</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="AboutMeSection" class="AboutMeSection">
+        <h1 class="sectionAboutMeTitle">Sobre mim</h1>
+        <div class="cardContainer">
+            <figure class="cardFigure">
+                <img src="" alt="">
+            </figure>
+            <figure class="myPhoto">
+                <img src="img/bg.png" alt="">
+            </figure>
+            <div class="cardInformationContainer">
+                <div class="informations">
+                    <div class="personalInformations">
+                        Tenho trabalhado com desenvolvimento front-end em modo freelancer,
+                        criando sites responsivos de alta qualidade e entrega rápida.
+                    </div>
+                    <div class="contactInformations">
+                        <p class="pagraphsInforms"><span class="iconInforms"><span class="material-symbols-outlined informsIcon">mail</span>Email:</span> igorfondev@gmail.com</p>
+                        <p class="pagraphsInforms"><span class="iconInforms"> <span class="material-symbols-outlined informsIcon">phone_iphone</span>Celular:</span>(12) 99174-2515</p>
+                        <p class="pagraphsInforms"><span class="iconInforms"><span class="material-symbols-outlined informsIcon">school</span>Educação:</span> UNIVESP</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
