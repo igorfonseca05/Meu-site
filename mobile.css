@@ -126,6 +126,7 @@ span {
     top: 50px;
     /* background-color: brown; */
     height: 50%;
+    width: 80%;
     border-top: 1px solid var(--detaisColor);
     border-bottom: 1px solid var(--detaisColor);
 }
@@ -237,7 +238,7 @@ span {
 
 .mainFigure {
     position: relative;
-    margin-left: 134px;
+    margin-left: 107px;
     width: 533px;
     border-radius: 50%;
     height: 100%;
@@ -305,7 +306,7 @@ span {
     position: relative;
     margin: 0 auto;
     width: 90%;
-    height: 80%;
+    height: 85%;
     overflow: hidden;
     border-radius: 20px;
 
@@ -360,13 +361,13 @@ span {
     transform: translateX(132px);
 }
 .informations .personalInformations{
-    font-size: var(--fontTitulos);
+    font-size: var(--fontSubHeadig);
     color: white;
 }
 
 .contactInformations {
     font-size: var(--fontcardInfos);
-    margin-top: 4px;
+    margin-top: 22px;
     width: 100%;
     /* background-color: #18998c; */
 }
@@ -377,7 +378,7 @@ span {
     align-items: center;
     /* background-color: #D95A11; */
     /* margin-top: 2px; */
-    height: 40px;
+    height: 30px;
 }
 .pagraphsInforms .iconInforms{
     display: flex;
