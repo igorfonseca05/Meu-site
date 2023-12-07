@@ -68,14 +68,15 @@ span {
     cursor: pointer;
     user-select: none;
     /* color: var(--IconColor); */
+    /* background-color: #7EF2E7; */
 }
 
 .externalMenu {
-    margin: 10px 10px;
+    padding: 48px;
     position: absolute;
     color: var(--IconColor);
     position: fixed;
-    font-size: 35px;
+    font-size: 32px;
     z-index: 4;
 }
 
@@ -98,6 +99,7 @@ span {
     transition: transform 0.5s;
     transform: translateX(-100%);
     z-index: 5;
+    border-radius: 0px 20px 20px 0px;
 }
 
 .iconsNav {
@@ -233,63 +235,7 @@ span {
     overflow-x: hidden;
 }
 
-.mainContainer {
-    /* text-align: center; */
-    margin-top: 69px;
-    width: 100%;
-    height: 530px;
-    /* background-color: #BF0404; */
-}
 
-.mainFigure {
-    position: relative;
-    margin-left: 107px;
-    width: 533px;
-    border-radius: 50%;
-    height: 100%;
-    background-color: #7EF2E7;
-    overflow: hidden;
-}
-
-.mainFigure img {
-    margin-left: -21px;
-    width: 100%;
-    height: 100%;
-}
-
-.mainTitle,
-h5 {
-    transform: translate(13px, 240px);
-    color: var(--menuMobColor);
-}
-
-.mainTitle {
-    width: 172px;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    font-size: var(--fontDestaque);
-    border-bottom: 2px solid var(--menuMobColor);
-}
-
-.buttonContainer {
-    margin-top: 20px;
-    width: 100%;
-    text-align: center;
-}
-
-.mainButton {
-    font-family: 'Bai Jamjuree', sans-serif;
-    font-weight: 400;
-    border: none;
-    width: 150px;
-    height: 40px;
-    border-radius: 40px;
-}
-
-.mainButton:hover {
-    background-color: var(--detaisColor);
-    box-shadow: 0px 0px 5px var(--detaisColor);
-}
 
 
 
