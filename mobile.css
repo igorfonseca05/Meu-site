@@ -434,10 +434,12 @@ h5 {
 }
 
 .gitlink a {
+    display: flex;
+    align-items: center;
     text-decoration: none;
     color: black;
     height: 30px;
-    background-color: #D95A11;
+    /* background-color: #D95A11; */
 }
 .gitlink a:active {
     text-decoration: none;
