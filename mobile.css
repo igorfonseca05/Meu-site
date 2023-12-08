@@ -5,7 +5,7 @@
     --secondaryColor: #ff7f35;
     --detaisColor: #04ADBF;
     --menuMobColor: #262626;
-    --bgColor : #111111;
+    --bgColor : #1a1a1a;
     --IconColor: #D9D9D9;
     --cardBackground: #595959;
 
@@ -420,7 +420,7 @@ span {
     width: 150px;
     height: 16px;
     /* background-color: rgb(153, 112, 51); */
-    margin-right: 32px;
+    margin-right: 14px;
     /* color: var(--IconColor); */
     color: var(--detaisColor);
     margin-bottom: 4px;
