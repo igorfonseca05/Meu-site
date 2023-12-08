@@ -115,6 +115,7 @@ span {
     height: 100%;
     margin-left: -1px;
 }
+
 .menuMobile {
     justify-content: space-between;
     /* position: relative; */
@@ -143,7 +144,7 @@ span {
     justify-content: space-around;
     position: relative;
     text-align: center;
-    top: -50px;
+    top: -90px;
     /* background-color: brown; */
     height: 50%;
     width: 100%;
@@ -199,7 +200,7 @@ span {
     /* background-color: aqua; */
     position: relative;
     /* top: 250px; */
-    padding-bottom: 8px;
+    padding-bottom: 44px;
     text-align: center;
     text-align: center;
 }
