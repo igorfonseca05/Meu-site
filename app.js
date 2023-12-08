@@ -3,8 +3,6 @@ const internalMenuIcon = document.querySelector('[data-js="internalIcon"]')
 const menuMobile = document.querySelector('[data-js="menuMobile"]')
 const backgroundMenu = document.querySelector('[data-js="darkenBackground"]')
 const ulContainer = [...document.querySelector('[data-js="ulContainer"]').children]
-const card = document.querySelector('.card')
-
 
 
 const openMenu = () => {
@@ -19,9 +17,7 @@ const closeMenu = () => {
     menuMobile.classList.add('closeMenu')
 }
 
-const turnCard = () => {
-    card.classList.toggle('is-flipped')
-}
+
 
 const closeMenuOnClickItem = () => {
     ulContainer.forEach(li => {
@@ -34,4 +30,15 @@ closeMenuOnClickItem()
 externalMenuIcon.addEventListener('click', openMenu)
 internalMenuIcon.addEventListener('click', closeMenu)
 backgroundMenu.addEventListener('click', closeMenu)
-card.addEventListener('click',turnCard)
+
+
+const teste =  () => {
+    fetch('https://api.github.com/users/igorfonseca05')
+         .then(async(res) => {
+            const obj = await res.json()
+            console.log(obj.public_repos)
+         })
+         .catch(console.log)
+}
+
+teste()
