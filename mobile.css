@@ -72,20 +72,26 @@ span {
 }
 
 .externalMenu {
-    padding: 48px;
-    position: absolute;
+    margin-top: 8px;
+    padding: 48px 32px 16px 16px ;
     color: var(--IconColor);
     position: fixed;
-    font-size: 32px;
+    font-size: 24px;
     z-index: 4;
 }
 
-.externalMenu:hover {
-    margin: 10px 10px;
-    /* position: absolute; */
-    color: var(--detaisColor)
-}
 
+.iconsNav {
+    margin-top: 8px;
+    padding: 48px 32px 16px 16px ;
+    /* margin: 10px 10px; */
+    justify-content: space-between;
+    width: 100%;
+    height: 24px;
+    color: var(--detaisColor);
+
+    /* background-color: rebeccapurple; */
+}
 .menuMobile {
     /* position: relative; */
     position: fixed;
@@ -102,15 +108,6 @@ span {
     border-radius: 0px 20px 20px 0px;
 }
 
-.iconsNav {
-    margin: 10px 10px;
-    justify-content: space-between;
-    width: 90%;
-    height: 40px;
-    color: var(--detaisColor);
-
-    /* background-color: rebeccapurple; */
-}
 
 .iconsNav span:nth-child(1) {
     font-size: 35px;
