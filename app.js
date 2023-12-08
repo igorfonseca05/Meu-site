@@ -17,28 +17,36 @@ const closeMenu = () => {
     menuMobile.classList.add('closeMenu')
 }
 
-
-
 const closeMenuOnClickItem = () => {
     ulContainer.forEach(li => {
         li.addEventListener('click', closeMenu)
     })
 }
 
-closeMenuOnClickItem()
+
+const getGitHubDatas = () =>
+    fetch('https://api.github.com/users/igorfonseca05')
+        .then(res => res.json())
+        .catch(console.log)
+
+const showDGitDatasOnScreen = async () => {
+    const mainText = document.querySelector('[data-js="aboutMePragraph"]')
+    const dadosGit = await getGitHubDatas()
+
+    mainText.textContent = dadosGit.bio
+    
+}
+
+
+
 
 externalMenuIcon.addEventListener('click', openMenu)
 internalMenuIcon.addEventListener('click', closeMenu)
 backgroundMenu.addEventListener('click', closeMenu)
 
 
-const teste =  () => {
-    fetch('https://api.github.com/users/igorfonseca05')
-         .then(async(res) => {
-            const obj = await res.json()
-            console.log(obj.public_repos)
-         })
-         .catch(console.log)
-}
 
-teste()
+
+closeMenuOnClickItem()
+getGitHubDatas()
+showDGitDatasOnScreen()

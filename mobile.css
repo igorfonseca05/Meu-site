@@ -5,6 +5,7 @@
     --secondaryColor: #ff7f35;
     --detaisColor: #04ADBF;
     --menuMobColor: #262626;
+    --bgColor : #111111;
     --IconColor: #D9D9D9;
     --cardBackground: #595959;
 
@@ -44,11 +45,10 @@ body {
     display: none;
     width: 100%;
     height: 100vh;
-    background-color: #0d0d0d85;
+    background-color: #0d0d0da1;
     /* position: absolute; */
     position: fixed;
     z-index: 3;
-    backdrop-filter: blur(1px);
 }
 
 section {
@@ -85,7 +85,7 @@ span {
 }
 
 .externalMenu:hover {
-    color: var(--detaisColor);
+    color: rgb(0, 229, 255)
 }
 
 .menuIcon {
@@ -308,12 +308,13 @@ span {
     text-transform: capitalize;
     font-family: var(--fontProject);
     transform: translateY(30px);
-    box-shadow: 0px 1px 10px #04acbfbb;
+    background-color: var(--detaisColor)
 
 }
 
 .cvButton:hover {
-    background-color: var(--detaisColor);
+    background-color: rgb(0, 229, 255);
+    box-shadow: 0px 0px 3px 1px var(--detaisColor);
 }
 
 .cvButton span {
@@ -325,7 +326,7 @@ span {
 /* Section Two */
 
 .AboutMeSection {
-    background-color: var(--menuMobColor);
+    background-color: var(--bgColor);
     flex-direction: column;
 }
 
@@ -333,7 +334,9 @@ span {
     text-align: center;
     margin-top: 40px;
     margin-bottom: 15px;
-    color: var(--secondaryColor);
+    color: var(--detaisColor);
+    font-size: var(--fontHeadLine);
+
 }
 
 .card {
@@ -397,10 +400,17 @@ span {
     
 }
 
+.gitRepositorieNum{
+    width: 50px;
+    height: 50px;
+    background-color: rebeccapurple;
+    margin-left: 20px;
+}
+
 .informations {
     display: flex;
     flex-direction: column;
-    margin: 74px auto 10px auto;
+    margin: 33px auto 10px auto;
     width: 84%;
     /* background-color: #04ADBF; */
 }
@@ -438,4 +448,13 @@ span {
 .cardIcon {
     margin-right: 4px;
     font-size: var(--fontParagraphs);
+}
+
+.button {
+    width: 100%;
+    height: 3em;
+    font-family: var(--fontProject);
+    border: none;
+    border-radius: 0px 0px 20px 20px;
+    background-color: var(--secondaryColor);
 }
