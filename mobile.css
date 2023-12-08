@@ -370,14 +370,15 @@ span {
     position: relative;
     /* position: absolute; */
     /* top: -70px; */
-    margin: 0 auto;
+    margin-left: 35px;
     width: 150px;
     height: 150px;
     background-color: var(--menuMobColor);
     border-radius: 50%;
     overflow: hidden;
     top: -80px;
-    border: 2px solid var(--secondaryColor);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.425);
+    border: 2px solid var(--detaisColor);
 }
 
 .myImage img {
@@ -396,21 +397,47 @@ span {
     background-color: #595959;
     top: 170px;
     border-radius: 20px 20px 20px 20px;
-    border-top: 2px solid var(--secondaryColor);
+    border-top: 2px solid var(--detaisColor);
     
 }
 
+.aligParagaph {
+    width: 100%;
+    background-color: #262626;
+}
+
+
 .gitRepositorieNum{
-    width: 50px;
-    height: 50px;
-    background-color: rebeccapurple;
-    margin-left: 20px;
+    width: 100%;
+    display: flex;
+    align-items: end;
+    flex-direction: column;
+    margin-top: 10px;
+}
+
+.gitRepositorieNum p{
+    text-align: center;
+    width: 150px;
+    height: 16px;
+    /* background-color: rgb(153, 112, 51); */
+    margin-right: 32px;
+    /* color: var(--IconColor); */
+    color: var(--detaisColor);
+    margin-bottom: 4px;
+}
+.gitRepositorieNum p:nth-child(2){
+    /* color: var(--secondaryColor); */
+    color: var(--IconColor);
+}
+
+.projectsGif {
+    font-size: var(--fontParagraphs);
 }
 
 .informations {
     display: flex;
     flex-direction: column;
-    margin: 33px auto 10px auto;
+    margin: 35px auto 10px auto;
     width: 84%;
     /* background-color: #04ADBF; */
 }
@@ -421,7 +448,7 @@ span {
 }
 
 .contactInformations {
-    margin: 16px auto;
+    margin: 18px auto;
     width: 100%;
 }
 
@@ -441,7 +468,7 @@ span {
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-    color: var(--secondaryColor);
+    color: var(--detaisColor);;
     margin-right: 4px;
 }
 
@@ -456,5 +483,23 @@ span {
     font-family: var(--fontProject);
     border: none;
     border-radius: 0px 0px 20px 20px;
-    background-color: var(--secondaryColor);
+    background-color: var(--detaisColor);
+}
+
+@media screen and (max-width: 330px) {
+    .gitRepositorieNum{
+       display: none;
+    }
+
+    .myImage {
+        transition: 0.4s ease-in-out;
+        /* transform: translateX(10%); */
+        margin: 0 auto;
+    }
+
+    .informations {
+        margin: 75px auto 10px auto;
+        /* width: 84%; */
+        /* background-color: #04ADBF; */
+    }
 }

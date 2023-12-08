@@ -30,10 +30,15 @@ const getGitHubDatas = () =>
         .catch(console.log)
 
 const showDGitDatasOnScreen = async () => {
+    const amountProject =  document.querySelector('[data-js="reposNum"]')
     const mainText = document.querySelector('[data-js="aboutMePragraph"]')
     const dadosGit = await getGitHubDatas()
 
+    console.log(dadosGit)
+
     mainText.textContent = dadosGit.bio
+    amountProject.textContent = dadosGit.public_repos
+
     
 }
 
