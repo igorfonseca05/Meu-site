@@ -2,7 +2,10 @@ const externalMenuIcon = document.querySelector('[data-js="externalIcon"]')
 const internalMenuIcon = document.querySelector('[data-js="internalIcon"]')
 const menuMobile = document.querySelector('[data-js="menuMobile"]')
 const backgroundMenu = document.querySelector('[data-js="darkenBackground"]')
+const ulContainer = [...document.querySelector('[data-js="ulContainer"]').children]
 const card = document.querySelector('.card')
+
+
 
 const openMenu = () => {
     backgroundMenu.style.display = 'block'
@@ -19,6 +22,14 @@ const closeMenu = () => {
 const turnCard = () => {
     card.classList.toggle('is-flipped')
 }
+
+const closeMenuOnClickItem = () => {
+    ulContainer.forEach(li => {
+        li.addEventListener('click', closeMenu)
+    })
+}
+
+closeMenuOnClickItem()
 
 externalMenuIcon.addEventListener('click', openMenu)
 internalMenuIcon.addEventListener('click', closeMenu)
