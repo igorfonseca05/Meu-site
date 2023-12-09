@@ -27,7 +27,7 @@
 
     html,
     body {
-        background: var(--backgroundColor) url(/img/MacBook\ Air\ -\ bg\ oficial.png) no-repeat;
+        background: var(--backgroundColor) url(/img/bg\ full.jpg) no-repeat;
         background-size: cover;
         background-attachment: fixed;
         background-position: center;
