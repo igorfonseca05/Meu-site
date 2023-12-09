@@ -1,5 +1,25 @@
 @import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@300;400;500;600;700&family=Sometype+Mono:wght@400;500;700&display=swap');
 
+:root {
+    --backgroundColor: #0D0D0D;
+    --secondaryColor: #ff7f35;
+    --detaisColor: #04ADBF;
+    --menuMobColor: #262626;
+    --bgColor : #222222;
+    --IconColor: #D9D9D9;
+    --cardBackground: #696969;
+
+    --fontDestaque: 35px;
+    --fontHeadLine: 30px;
+    --fontSubHeadig: 25px;
+    --fontTitulos: 20px;
+    --fontSubtitulos: 16px;
+    --fontcardInfos: 14px;
+    --fontParagraphs: 12px;
+    --fontInfo: 10px;
+
+    --fontProject: 'Bai Jamjuree', sans-serif;
+}
 
 
 
