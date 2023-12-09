@@ -24,6 +24,15 @@
 
 @media screen and (min-width: 992px) {
 
+    html,
+    body {
+        background: url(../img/DesktopBg.png) no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+        background-position: center;
+
+    }
+
     .mainContainer:only-child {
         text-align: start;
         margin-left: 50px;
