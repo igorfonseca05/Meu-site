@@ -37,7 +37,7 @@ body {
     /* font-family: 'Sometype Mono', monospace; */
     scroll-behavior: smooth;
     font-size: 16px;
-    background: url(/img/full.jpg) no-repeat;
+    background: url(../img/full.jpg) no-repeat;
     background-size: cover;
     background-attachment: fixed;
     background-position: center;
