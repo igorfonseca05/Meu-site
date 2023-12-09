@@ -5,7 +5,8 @@
     --secondaryColor: #ff7f35;
     --detaisColor: #04ADBF;
     --menuMobColor: #262626;
-    --bgColor : #222222;
+    --bgColor: #222222;
+    /* --cardDesktopColor: #202020; */
     --IconColor: #D9D9D9;
     --cardBackground: #696969;
 
@@ -22,21 +23,44 @@
 }
 
 
-@media screen and (min-width: 762px) {
+@media screen and (min-width: 750px) and (max-width: 992px)  {
+
+    .AboutMeSection {
+        background-color: var(--bgColor);
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .sectionAboutMeTitle {
+        display: none;
+    
+    }
 
     .card {
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
         margin: 0 auto;
-        background-color: #595959;
+        background-color: var(--cardBackground);
         width: 90%;
-        height: 80vh;
+        /* height: 80vh; */
         position: relative;
         border-radius: 20px;
         max-width: none;
-    
+        transition: display 0.5s ease-in-out;
+        /* flex-grow: 1; */
+        overflow: hidden;
+        margin-top: 35px;
+
     }
-    
+
+    .cardInternalItems {
+        width: 28%;
+        background: var(--cardBackground) url(/img/bg\ copi.jpg) no-repeat;
+        background-size: cover;
+        background-position: center;
+
+    }
+
     .cardBackground {
         display: none;
         width: 100%;
@@ -44,165 +68,184 @@
         /* border-bottom: 2px solid var(--secondaryColor); */
         /* overflow: hidden; */
     }
-    
+
     .cardBackground img {
-        display: none;
         width: 100%;
         height: 130%;
         border-radius: 20px 20px 0px 0px;
     }
-    
+
     .myImage {
-        z-index: 1;
-        position: absolute;
-        /* position: absolute; */
-        /* top: -70px; */
-        margin-left: 35px;
-        width: 20%;
-        height: 10%;
-        background-color: var(--menuMobColor);
-        border-radius: 50%;
-        overflow: hidden;
+        position: relative;
+        width: 120px;
+        height: 120px; 
         top: 0px;
+        margin: 0 auto;
         box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.425);
         border: 2px solid var(--detaisColor);
+        transition: display 0.5s ease-in-out;
+        transform: translate(0px, 20px);
     }
-    
-    .myImage img {
-        width: 100%;
-        height: 99%;
-        /* border-radius: 50%; */
-        margin-left: -4px;
-        margin-top: 9px;
-    }
-    
+
     .curveBg {
-        position: relative;
-        /* background-color: blueviolet; */
-        width: 30%;
-        /* top: -80px; */
-        height: 89%;
-        /* background-color: #a9bdc9; */
-        margin-top: 0px; 
-        border-radius: 20px 20px 20px 20px;
+        width: 100%;
+        transition: width 0.7s ease-in-out;
+        height: 100%;
+        background-color: transparent;
+        margin-top: 30px;
+        border-radius:  0px;
         border-top: none;
-        
+        /* flex-grow: 3; */
     }
-    
+
     .aligParagaph {
         width: 100%;
         background-color: #262626;
     }
-    
-    
-    .gitRepositorieNum{
+
+
+    .gitRepositorieNum {
+        /* border-top: 1px solid var(--detaisColor); */
+        /* border-bottom: 1px solid var(--detaisColor); */
         width: 100%;
         display: flex;
-        align-items: end;
         flex-direction: column;
-        margin-top: 10px;
+        align-items: center;
+        margin: 16px 0px 14px 0px;
+        height: 24px;
     }
-    
-    .gitRepositorieNum p{
-        display: none;
-        text-align: center;
+
+    .gitRepositorieNum p {
         width: 150px;
         height: 16px;
         /* background-color: rgb(153, 112, 51); */
-        margin-right: 14px;
+        margin-right: 0px;
         /* color: var(--IconColor); */
         color: var(--detaisColor);
-        margin-bottom: 4px;
+        margin-bottom: 0px;
+        margin: 0 auto;
+        font-size: var(--fontParagraphs);
+
     }
 
-    .gitRepositorieNum p:nth-child(2){
+
+    .projectsGif, [data-js="reposNum"]{
         /* color: var(--secondaryColor); */
         color: var(--IconColor);
+        width: 100%;
+        margin: 0px;
+        /* background-color: #49c78c; */
+        /* font-weight: 600; */
     }
-    
-    .projectsGif {
-        font-size: var(--fontParagraphs);
-    }
-    
+
     .informations {
-        position: relative;
         display: flex;
         flex-direction: column;
-        justify-content: center;
         margin: 0 auto;
         width: 84%;
-        height: 100%;
-        background-color: #04ADBF;
+        /* background-color: #04ADBF; */
     }
-    
 
     .personalInformations p {
         font-size: 1em;
-        margin-top: 0px;
         color: var(--IconColor);
     }
-    
+
     .contactInformations {
-        margin: 18px auto;
+        margin: 8px auto;
         width: 100%;
     }
-    
-    .pagraphsInforms{
-        display: flex;
-        flex-wrap: wrap;
-        align-items: center;
-        justify-content: start;
-        /* background-color: #04ADBF; */
-        margin-bottom: 4px;
-        height: 30px;
+
+    .pagraphsInforms {
+        color: var(--IconColor);
         font-size: var(--fontParagraphs);
     }
-    
+
     .iconInforms {
         display: flex;
         flex-wrap: wrap;
         align-items: center;
         justify-content: center;
-        color: var(--detaisColor);;
+        color: var(--detaisColor);
+        ;
         margin-right: 4px;
     }
-    
+
     .cardIcon {
         margin-right: 4px;
         font-size: var(--fontParagraphs);
     }
-    
+
     .ButtonLearMore {
         width: 100%;
         height: 3em;
         font-family: var(--fontProject);
         font-size: var(--fontSubtitulos);
         border: none;
-        border-radius: 0px 0px 20px 20px;
+        border-radius: 0px;
         background-color: var(--detaisColor);
         cursor: pointer;
     }
+
     .ButtonLearMore:hover {
         background-color: rgb(0, 229, 255);
         box-shadow: 0px 0px 3px 1px var(--detaisColor);
     }
-    
+
+    .aboutMeContainer {
+        display: block;
+        width: 20%;
+        flex-grow: 1; 
+    }
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     @media screen and (max-width: 330px) {
-        .gitRepositorieNum{
-           display: none;
+        .gitRepositorieNum {
+            display: none;
         }
-    
+
         .myImage {
             transition: 0.4s ease-in-out;
             /* transform: translateX(10%); */
             margin: 0 auto;
         }
-    
+
         .informations {
             margin: 75px auto 10px auto;
             /* width: 84%; */
             /* background-color: #04ADBF; */
         }
     }
-    
+
+    @media screen and (max-width: 330px) {
+        .gitRepositorieNum {
+            display: none;
+        }
+
+        .myImage {
+            transition: 0.4s ease-in-out;
+            /* transform: translateX(10%); */
+            margin: 0 auto;
+        }
+
+        .informations {
+            margin: 75px auto 10px auto;
+            /* width: 84%; */
+            /* background-color: #04ADBF; */
+        }
+    }
+
 }

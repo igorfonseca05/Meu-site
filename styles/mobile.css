@@ -341,6 +341,23 @@ span {
 
 }
 
+.mainTitle:hover {
+    color: rgb(0, 229, 255);
+    text-shadow: 0px 0px 30px var(--detaisColor);
+}
+
+.sectionAboutMeTitle {
+    margin-top: 59px;
+    font-size: 35px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
+
+.sectionAboutMeTitle:hover {
+    color: rgb(0, 229, 255);
+    text-shadow: 0px 0px 30px var(--detaisColor);
+}
+
 .card {
     display: flex;
     flex-direction: column;
@@ -490,9 +507,14 @@ span {
     background-color: var(--detaisColor);
     cursor: pointer;
 }
+
 .ButtonLearMore:hover {
     background-color: rgb(0, 229, 255);
-    box-shadow: 0px 0px 3px 1px var(--detaisColor);
+    box-shadow: 0px 0px 10px 1px var(--detaisColor);
+}
+
+.aboutMeContainer {
+    display: none;
 }
 
 @media screen and (max-width: 330px) {
@@ -511,4 +533,9 @@ span {
         /* width: 84%; */
         /* background-color: #04ADBF; */
     }
+}
+
+.cardInternalItems {
+   display: block;
+
 }

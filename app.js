@@ -35,40 +35,31 @@ const showDGitDatasOnScreen = async () => {
     const amountProject =  document.querySelector('[data-js="reposNum"]')
     const mainText = document.querySelector('[data-js="aboutMePragraph"]')
     const dadosGit = await getGitHubDatas()
-    
+
+    amountProject.style.textShadow = "0px 0px 5px #00e5ff"
     mainText.textContent = dadosGit.bio
     // amountProject.textContent = dadosGit.public_repos 
     
     addAnimationcount(amountProject , dadosGit.public_repos )
 }
 
+
 const addAnimationcount = (numContainer, amountProjects) => {
     const timer = setInterval(() => {
-       const value = ++numContainer.textContent
+        numContainer.style.color = '#00e5ff'
+        const value = ++numContainer.textContent
        
        if(value === amountProjects) {
            clearInterval(timer)
+           numContainer.style.textShadow = ""
            return
        }
     }, 70)
 }
 
+const addLightElements = () => {
 
-
-const addHoverOnButton = () => {
-    const buttons = document.querySelectorAll('[data-js="hoverable"]')
-
-   console.log(buttons[0].style)
-
-   buttons.forEach(button => {
-    button.addEventListener('touchstart', () => {
-        button.style.backgroundColor = 'rgb(0, 229, 255)';
-        button.style.boxShadow = '0px 0px 3px 1px rgb(0, 229, 255)'
-    })
-})
 }
-
-addHoverOnButton()
 
 externalMenuIcon.addEventListener('click', openMenu)
 internalMenuIcon.addEventListener('click', closeMenu)
