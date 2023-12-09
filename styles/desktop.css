@@ -34,8 +34,8 @@
     }
 
     .AboutMeSection {
-        background-color: transparent;
-        /* background-image: linear-gradient(180deg, #000000 0%, #434343 100%); */
+        /* background-color: transparent; */
+        background-image: linear-gradient(180deg, #000000 0%, #434343 100%);
         flex-direction: column;
     }
 
@@ -60,7 +60,7 @@
         width: 28%;
         height: 100%;
         /* height: 540px; */
-        background: var(--cardBackground) url(/img/bg\ copi.jpg) no-repeat;
+        background: var(--cardBackground) url(../img/bg\ card\ desktop.jpg) no-repeat;
         background-size: cover;
         background-position: center;
     }

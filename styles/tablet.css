@@ -51,7 +51,7 @@
 
     .cardInternalItems {
         width: 28%;
-        background: var(--cardBackground) url(/img/bg\ copi.jpg) no-repeat;
+        background: var(--cardBackground) url(../img/mobileBg.jpg) no-repeat;
         background-size: cover;
         background-position: center;
 
