@@ -37,10 +37,10 @@ body {
     /* font-family: 'Sometype Mono', monospace; */
     scroll-behavior: smooth;
     font-size: 16px;
-    background: #0D0D0D url(/img/bg\ full.jpg) no-repeat;
+    background: url(/img/bg\ full.jpg) no-repeat;
     background-size: cover;
     background-attachment: fixed;
-    background-position: left;
+    background-position: center;
 
 }
 
