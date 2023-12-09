@@ -36,7 +36,7 @@ const showDGitDatasOnScreen = async () => {
     const mainText = document.querySelector('[data-js="aboutMePragraph"]')
     const dadosGit = await getGitHubDatas()
 
-    amountProject.style.textShadow = "0px 0px 5px #00e5ff"
+    amountProject.style.textShadow = "0px 0px 8px #00e5ff"
     mainText.textContent = dadosGit.bio
     // amountProject.textContent = dadosGit.public_repos 
     
@@ -57,9 +57,6 @@ const addAnimationcount = (numContainer, amountProjects) => {
     }, 70)
 }
 
-const addLightElements = () => {
-
-}
 
 externalMenuIcon.addEventListener('click', openMenu)
 internalMenuIcon.addEventListener('click', closeMenu)

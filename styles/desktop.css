@@ -5,8 +5,8 @@
     --secondaryColor: #ff7f35;
     --detaisColor: #04ADBF;
     --menuMobColor: #262626;
-    --bgColor : #222222;
-    --cardDesktopColor: #3f3f3f;
+    --bgColor: #222222;
+    --cardDesktopColor: #292929;
     --IconColor: #D9D9D9;
     --cardBackground: #696969;
 
@@ -25,12 +25,36 @@
 
 @media screen and (min-width: 992px) {
 
+    html,
+    body {
+        background: var(--backgroundColor) url(/img/MacBook\ Air\ -\ bg\ oficial.png) no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+        background-position: center;
+
+    }
+
+    .mainContainer:only-child {
+        text-align: start;
+        margin-left: 50px;
+    }
+
+    .cvButton {
+        margin: 0px;
+    }
+
+    .AboutMeSection {
+        /* background-color: transparent; */
+        background-image: linear-gradient(180deg, #000000 0%, #434343 100%);
+        flex-direction: column;
+    }
+
     .card {
         display: flex;
         flex-direction: row;
         justify-content: center;
         margin: 0 auto;
-        background-color: var(--cardBackground);
+        background-color: var(--cardDesktopColor);
         width: 80%;
         height: auto;
         position: relative;
@@ -38,14 +62,15 @@
         max-width: 1200px;
         overflow: hidden;
         transition: width 0.5s ease-in-out;
-    
+        box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.527);
+
     }
 
-    .cardInternalItems{
+    .cardInternalItems {
         width: 28%;
         height: 100%;
         /* height: 540px; */
-        background: var(--cardBackground) url(/img/bg\ copi.jpg) no-repeat ;
+        background: var(--cardBackground) url(/img/bg\ copi.jpg) no-repeat;
         background-size: cover;
         background-position: center;
     }
@@ -53,11 +78,11 @@
     .cardBackground {
         display: none;
     }
-    
+
     .cardBackground img {
         display: none;
     }
-    
+
     .myImage {
         z-index: 1;
         /* position: absolute; */
@@ -69,11 +94,11 @@
         background-color: var(--menuMobColor);
         border-radius: 50%;
         overflow: hidden;
-        top:  16px;
+        top: 16px;
         /* box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.425); */
         box-shadow: 0px 0px 5px 0px var(--detaisColor);
     }
-    
+
     .myImage img {
         width: 100%;
         height: 99%;
@@ -81,34 +106,34 @@
         margin-left: -4px;
         margin-top: 9px;
     }
-    
+
     .curveBg {
         position: relative;
         background-color: transparent;
         width: 100%;
         height: 100%;
-        margin-top: 20px; 
+        margin-top: 20px;
         border-radius: 0px;
         border-top: none;
         overflow: hidden;
-        
+
     }
-    
+
     .aligParagaph {
         width: 100%;
         background-color: #262626;
     }
-    
-    
-    .gitRepositorieNum{
+
+
+    .gitRepositorieNum {
         width: 100%;
         display: flex;
         align-items: center;
         flex-direction: column;
         margin: 8px 0px;
     }
-    
-    .gitRepositorieNum p{
+
+    .gitRepositorieNum p {
         text-align: center;
         width: 150px;
         height: 16px;
@@ -120,16 +145,16 @@
         margin: 0 auto;
         font-size: var(--fontParagraphs);
     }
-    
-    .gitRepositorieNum p:nth-child(2){
+
+    .gitRepositorieNum p:nth-child(2) {
         /* color: var(--secondaryColor); */
         color: var(--IconColor);
     }
-    
+
     .projectsGif {
         font-size: var(--fontParagraphs);
     }
-    
+
     .informations {
         display: flex;
         flex-direction: column;
@@ -139,19 +164,19 @@
         height: 60%;
         /* background-color: #04ADBF; */
     }
-    
+
     .personalInformations p {
         font-size: 1em;
         color: var(--IconColor);
     }
-    
+
     .contactInformations {
         margin: 5px auto;
         width: 100%;
         color: var(--IconColor);
     }
-    
-    
+
+
     .ButtonLearMore {
         border-radius: 0px;
     }
@@ -162,6 +187,6 @@
         width: 60%;
         /* background-color: #ff7f35; */
     }
-    
-    
+
+
 }
