@@ -22,9 +22,7 @@
     --fontProject: 'Bai Jamjuree', sans-serif;
 }
 
-
 @media screen and (min-width: 992px) {
-
 
     .mainContainer:only-child {
         text-align: start;
@@ -36,8 +34,8 @@
     }
 
     .AboutMeSection {
-        /* background-color: transparent; */
-        background-image: linear-gradient(180deg, #000000 0%, #434343 100%);
+        background-color: transparent;
+        /* background-image: linear-gradient(180deg, #000000 0%, #434343 100%); */
         flex-direction: column;
     }
 
