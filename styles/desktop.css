@@ -60,7 +60,7 @@
         width: 28%;
         height: 100%;
         /* height: 540px; */
-        background: var(--cardBackground) url(../img/bg\ card\ desktop.jpg) no-repeat;
+        background: url(../img/mobileBg.jpg) no-repeat;
         background-size: cover;
         background-position: center;
     }
