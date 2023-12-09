@@ -1,0 +1,182 @@
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@300;400;500;600;700&family=Sometype+Mono:wght@400;500;700&display=swap');
+
+:root {
+    --backgroundColor: #0D0D0D;
+    --secondaryColor: #ff7f35;
+    --detaisColor: #04ADBF;
+    --menuMobColor: #262626;
+    --bgColor : #222222;
+    --IconColor: #D9D9D9;
+    --cardBackground: #696969;
+
+    --fontDestaque: 35px;
+    --fontHeadLine: 30px;
+    --fontSubHeadig: 25px;
+    --fontTitulos: 20px;
+    --fontSubtitulos: 16px;
+    --fontcardInfos: 14px;
+    --fontParagraphs: 12px;
+    --fontInfo: 10px;
+
+    --fontProject: 'Bai Jamjuree', sans-serif;
+}
+
+
+@media screen and (min-width: 992px) {
+
+    .card {
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+        background-color: #595959;
+        width: 90%;
+        height: 80vh;
+        position: relative;
+        border-radius: 20px;
+        max-width: none;
+    
+    }
+
+    .cardBackground {
+        display: none;
+        width: 100%;
+        height: 170px;
+        /* border-bottom: 2px solid var(--secondaryColor); */
+        /* overflow: hidden; */
+    }
+    
+    .cardBackground img {
+        width: 100%;
+        height: 130%;
+        border-radius: 20px 20px 0px 0px;
+        display: none;
+    }
+    
+    .myImage {
+        z-index: 1;
+        /* position: absolute; */
+        /* position: absolute; */
+        /* top: -70px; */
+        margin-left: 35px;
+        width: 150px;
+        height: 150px;
+        background-color: var(--menuMobColor);
+        border-radius: 50%;
+        overflow: hidden;
+        top:  40px;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.425);
+        border: 2px solid var(--detaisColor);
+    }
+    
+    .myImage img {
+        width: 100%;
+        height: 99%;
+        /* border-radius: 50%; */
+        margin-left: -4px;
+        margin-top: 9px;
+    }
+    
+    .curveBg {
+        position: relative;
+        background-color: blueviolet;
+        width: 20%;
+        height: 100%;
+        /* background-color: #595959; */
+        margin-top: 0px; 
+        border-radius: 20px 20px 20px 20px;
+        border-top: none;
+        
+    }
+    
+    .aligParagaph {
+        width: 100%;
+        background-color: #262626;
+    }
+    
+    
+    .gitRepositorieNum{
+        width: 100%;
+        display: flex;
+        align-items: end;
+        flex-direction: column;
+        margin-top: 10px;
+    }
+    
+    .gitRepositorieNum p{
+        text-align: center;
+        width: 150px;
+        height: 16px;
+        /* background-color: rgb(153, 112, 51); */
+        margin-right: 14px;
+        /* color: var(--IconColor); */
+        color: var(--detaisColor);
+        margin-bottom: 4px;
+    }
+    .gitRepositorieNum p:nth-child(2){
+        /* color: var(--secondaryColor); */
+        color: var(--IconColor);
+    }
+    
+    .projectsGif {
+        font-size: var(--fontParagraphs);
+    }
+    
+    .informations {
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+        width: 84%;
+        /* background-color: #04ADBF; */
+    }
+    
+    .personalInformations p {
+        font-size: 1.2em;
+        color: var(--IconColor);
+    }
+    
+    .contactInformations {
+        margin: 18px auto;
+        width: 100%;
+    }
+    
+    .pagraphsInforms{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: start;
+        /* background-color: #04ADBF; */
+        margin-bottom: 4px;
+        height: 30px;
+        font-size: var(--fontParagraphs);
+    }
+    
+    .iconInforms {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        color: var(--detaisColor);;
+        margin-right: 4px;
+    }
+    
+    .cardIcon {
+        margin-right: 4px;
+        font-size: var(--fontParagraphs);
+    }
+    
+    .ButtonLearMore {
+        width: 100%;
+        height: 3em;
+        font-family: var(--fontProject);
+        font-size: var(--fontSubtitulos);
+        border: none;
+        border-radius: 0px 0px 20px 20px;
+        background-color: var(--detaisColor);
+        cursor: pointer;
+    }
+    .ButtonLearMore:hover {
+        background-color: rgb(0, 229, 255);
+        box-shadow: 0px 0px 3px 1px var(--detaisColor);
+    }
+    
+}
