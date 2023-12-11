@@ -541,6 +541,55 @@ span {
     text-shadow: 0px 0px 30px var(--detaisColor);
 }
 
+.svgContainer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    text-align: center;
+    /* height: 150px; */
+    /* background-color: #f8be9d9f; */
+}
+
+.skills {
+    height: 166px;
+    /* background: rebeccapurple; */
+}
+
+.circleContainer{
+    margin: 0 auto;
+    width: 150px;
+    height: 164px;
+    /* background-color: var(--secondaryColor); */
+}
+
+.circleContainer circle{
+   cx: 100;
+   cy: 72;
+   r: 47;
+   fill: transparent;
+   stroke-width: 4px;
+   stroke: var(--detaisColor);
+   stroke-dashoffset: 360px;
+   stroke-dasharray: 655px;
+   transform: translate(3px,160px) rotateZ(-90deg);
+
+}
+
+.titleskill {
+    color: white;
+    font-weight: 200;
+    font-size: var(--fontProject);
+    transform: translateY(-55px);
+}
+
+.circleText{
+    stroke: white;
+    color: white;
+}
+
+
+
 
 
 
