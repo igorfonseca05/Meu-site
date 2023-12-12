@@ -40,11 +40,11 @@ const showDGitDatasOnScreen = async () => {
     mainText.textContent = dadosGit.bio
     // amountProject.textContent = dadosGit.public_repos 
     
-    addAnimationcount(amountProject , dadosGit.public_repos )
+    addAnimationcard(amountProject , dadosGit.public_repos )
 }
 
 
-const addAnimationcount = (numContainer, amountProjects) => {
+const addAnimationcard = (numContainer, amountProjects) => {
     const timer = setInterval(() => {
         numContainer.style.color = '#00e5ff'
         const value = ++numContainer.textContent
@@ -58,6 +58,51 @@ const addAnimationcount = (numContainer, amountProjects) => {
 }
 
 
+const animateSkills = () => {
+    const radius = 47
+    const strokeDashoffset = 360;
+    const circumference = Math.round(2* Math.PI * radius)
+
+    const porcentSkills = [80, 60, 60, 75, 70, 80, 85, 80]
+    const from = {strokeDasharray: 360}
+    
+    const getCircles = document.querySelectorAll('[data-js="circle"]')
+
+
+
+    getCircles.forEach((circle, index) => {
+        // circle.style.stroke = '#00e5ff'
+        // circle.style.textShadow = "0px 0px 15px #00e5ff"
+        const porcent = (circumference * `${porcentSkills[index]}`) / 100;
+        const showporcent = porcent + strokeDashoffset
+        const to = {strokeDasharray: showporcent}
+
+        circle.animate([from, to], {
+            duration: 2000,
+            fill:"forwards",
+        })
+    })
+    
+
+
+}
+
+animateSkills()
+
+const runPorcentAnimation = () => {
+
+}
+
+
+
+
+
+
+
+
+
+
+
 externalMenuIcon.addEventListener('click', openMenu)
 internalMenuIcon.addEventListener('click', closeMenu)
 backgroundMenu.addEventListener('click', closeMenu)
@@ -67,4 +112,4 @@ backgroundMenu.addEventListener('click', closeMenu)
 
 closeMenuOnClickItem()
 getGitHubDatas()
-showDGitDatasOnScreen()
+// showDGitDatasOnScreen()

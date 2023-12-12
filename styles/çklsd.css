@@ -1,0 +1,53 @@
+.descriptionAboutMe {
+    /* background-color: blueviolet; */
+    width: 100%;
+    height: 150%;
+    background-color: #b33c1e;
+  
+}
+
+.aligParagaph {
+    width: 100%;
+    background-color: #262626;
+}
+
+
+.gitRepositorieNum{
+    width: 100%;
+    display: flex;
+    align-items: end;
+    flex-direction: column;
+    margin-top: 10px;
+}
+
+.gitRepositorieNum p{
+    text-align: center;
+    width: 150px;
+    height: 16px;
+    /* background-color: rgb(153, 112, 51); */
+    margin-right: 14px;
+    /* color: var(--IconColor); */
+    color: var(--detaisColor);
+    margin-bottom: 4px;
+}
+.gitRepositorieNum p:nth-child(2){
+    /* color: var(--secondaryColor); */
+    color: var(--IconColor);
+}
+
+.projectsGif {
+    font-size: var(--fontParagraphs);
+}
+
+.informations {
+    display: flex;
+    flex-direction: column;
+    margin: 35px auto 10px auto;
+    width: 84%;
+    /* background-color: #04ADBF; */
+}
+
+.personalInformations p {
+    font-size: 1.2em;
+    color: var(--IconColor);
+}

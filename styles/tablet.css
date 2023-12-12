@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@300;400;500;600;700&family=Sometype+Mono:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,200;6..12,300;6..12,400;6..12,500;6..12,600;6..12,700;6..12,800;6..12,900;6..12,1000&display=swap');
 
 :root {
     --backgroundColor: #0D0D0D;
@@ -18,7 +18,7 @@
     --fontParagraphs: 12px;
     --fontInfo: 10px;
 
-    --fontProject: 'Bai Jamjuree', sans-serif;
+    --fontProject: 'Nunito Sans', sans-serif;
 }
 
 
@@ -52,7 +52,7 @@
 
     .cardInternalItems {
         width: 28%;
-        background: var(--cardBackground) url(../img/photo-1623425484828-7eccb29713a7.avif) no-repeat;
+        background: none;
         background-size: cover;
         background-position: center;
 
@@ -194,6 +194,7 @@
         display: block;
         width: 20%;
         flex-grow: 1; 
+        /* background-color: #696969; */
     }
 
     .aboutMeContainer {

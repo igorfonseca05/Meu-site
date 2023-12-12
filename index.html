@@ -43,7 +43,7 @@
                     </a>
                 </li>
                 <li class="liItems">
-                    <a href="#">
+                    <a href="#sectionSkills">
                         <span class="material-symbols-outlined">sdk</span>
                         Habilidades
                     </a>
@@ -78,7 +78,7 @@
         </nav>
     </header>
 
-    <section id="mainSection" class="mainSection">
+    <section  style="display: none;" id="mainSection" class="mainSection">
         <div class="mainContainer">
             <h1 class="mainTitle">Web Developer</h1>
             <p>Igor Fonseca</p>
@@ -89,18 +89,19 @@
         </div>
     </section>
 
-    <section id="AboutMeSection" class="AboutMeSection">
+    <section  id="AboutMeSection" class="AboutMeSection">
         <h1 class="sectionAboutMeTitle">Sobre</h1>
         <div class="card">
             <div class="cardInternalItems">
-                <figure class="cardBackground">
-                    <img src="img/felix-besombes-EzrHLVd83h0-unsplash.jpg" alt="">
-                </figure>
-                <figure class="myImage">
-                    <img src="img/bg.png" alt="">
-                </figure>
-                <div class="curveBg">
-                    <div class="gitRepositorieNum">
+                <div class="imgContainer">
+                    <figure class="myImage">
+                        <img class="myphoto" src="img/bg.png" alt="">
+                    </figure>
+                    <div class="backgroundImage"></div>
+                </div>
+
+                <div style="display: none;" class="descriptionAboutMe">
+                    <div style="display: none;" class="gitRepositorieNum">
                         <p data-js="reposNum">0</p>
                         <p class="projectsGif">Projetos no github</p>
                     </div>
@@ -111,101 +112,88 @@
                                 desenvolvimento front-end em modo freelancer, criando sites
                                 responsivos de alta qualidade e entrega rápida.</p>
                         </div>
-                        <address class="contactInformations">
-                            <p class="pagraphsInforms"><span class="iconInforms"><span
-                                        class="material-symbols-outlined  cardIcon informsIcon">mail</span>Email:</span>igorfondev@gmail.com
-                            </p>
-                            <p class="pagraphsInforms"><span class="iconInforms"> <span
-                                        class="material-symbols-outlined cardIcon  informsIcon">phone_iphone</span>Celular:</span>(12)
-                                99174-2515</p>
-                            <p class="pagraphsInforms"><span class="iconInforms"><span
-                                        class="material-symbols-outlined  cardIcon informsIcon">school</span>Educação:</span>UNIVESP
-                            </p>
-                        </address>
                     </div>
-                    <a href="#">
-                        <button data-js="hoverable" class="ButtonLearMore">Saiba mais</button>
-                    </a>
                 </div>
             </div>
             <div class="aboutMeContainer">
-                <!-- <h1>Sobre</h1> -->
-                <p>A função do desenvolvedor front-end é estabelecer conexões entre design e lógica de negócios para
-                    obter um produto que atenda as necessidades do usuário. Um amplo conjunto de habilidades é
-                    necessário para produzir uma experiência de usuário de qualidade que leve ao cumprimento das metas
-                    de negócios,
+                <h1>Meu nome é <span>Igor</span></h1>
+                <p>Tenho tenho 28 anos e nos últimos dois anos tenho me dedicado intensamente ao estudo da linguagem de programação JavaScript, focando no desenvolvimento web em ambas as frentes (client-side e server-side), com destaque no front-end. Consciente da responsabilidade do desenvolvedor front-end, busco harmonizar design e lógica de negócios para criar produtos que atendam às necessidades do usuário.
                 </p>
-                <div class="highLightParagraphs">
-                    <p>Desenvolver web sites que adeque-se a uma ampla variedade de dispositivos</p>
-                    <p>Estabelecer conexão entre membros da equipe de design e desenvolvimento</p>
-                    <p>Aplicar padrões de design limpo e funcional</p>
-                </div>
-                <p>
-                    Dedicado ao meu trabalho e ciente de que aprimorar habilidades nunca é demais, sigo na buscando de
-                    fornecer sites e aplicações web responsivas de qualidade. Busco a oportunidade de aplicar meus
-                    conhecimentos em projetos grandiosos.
-                </p>
+                <address class="contactInformations">
+                    <p class="pagraphsInforms"><span class="iconInforms"><span
+                                class="material-symbols-outlined  cardIcon informsIcon">mail</span>Email:</span>igorfondev@gmail.com
+                    </p>
+                    <p class="pagraphsInforms"><span class="iconInforms"> <span
+                                class="material-symbols-outlined cardIcon  informsIcon">phone_iphone</span>Celular:</span>(12)
+                        99174-2515</p>
+                    <p class="pagraphsInforms"><span class="iconInforms"><span
+                                class="material-symbols-outlined  cardIcon informsIcon">school</span>Educação:</span>UNIVESP
+                    </p>
+                </address>
+                <a href="#">
+                    <button data-js="hoverable" class="ButtonLearMore">Saiba mais</button>
+                </a>
             </div>
         </div>
         </div>
         </div>
     </section>
 
-    <section class="sectionSkills">
-        <h1 class="titleSectionSkill">Habilidades</h1>
+    <section id="sectionSkills" class="sectionSkills">
+        <h1 class="sectionAboutMeTitle">Habilidades</h1>
         <div class="svgContainer">
             <div class="skills">
-                <svg class="circleContainer">
-                    <circle></circle>
+                <svg data-js="circleContainer" class="circleContainer">
+                    <circle data-js="circle"></circle>
                     <text x="59" y="68" class="circleText">80%</text>
                 </svg>
                 <h6 class="titleskill">Javascript</h6>
             </div>
             <div class="skills">
-                <svg class="circleContainer">
-                    <circle></circle>
+                <svg data-js="circleContainer" class="circleContainer">
+                    <circle data-js="circle"></circle>
                     <text x="59" y="68"  class="circleText">60%</text>
                 </svg>
                 <h6 class="titleskill">Bootstrap</h6>
             </div>
             <div class="skills">
-                <svg class="circleContainer">
-                    <circle></circle>
+                <svg data-js="circleContainer" class="circleContainer">
+                    <circle data-js="circle"></circle>
                     <text x="59" y="68" class="circleText">60%</text>
                 </svg>
                 <h6 class="titleskill">Materialize</h6>
             </div>
             <div class="skills">
-                <svg class="circleContainer">
-                    <circle></circle>
+                <svg data-js="circleContainer" class="circleContainer">
+                    <circle data-js="circle"></circle>
                     <text x="59" y="68" class="circleText">75%</text>
                 </svg>
                 <h6 class="titleskill">NodeJs</h6>
             </div>
             <div class="skills">
-                <svg class="circleContainer">
-                    <circle></circle>
+                <svg data-js="circleContainer" class="circleContainer">
+                    <circle data-js="circle"></circle>
                     <text x="59" y="68" class="circleText">70%</text>
                 </svg>
                 <h6 class="titleskill">MySQL</h6>
             </div>
             <div class="skills">
-                <svg class="circleContainer">
-                    <circle></circle>
+                <svg data-js="circleContainer" class="circleContainer">
+                    <circle data-js="circle"></circle>
                     <text x="59" y="68" class="circleText">80%</text>
                 </svg>
                 <h6 class="titleskill">MongoDB</h6>
             </div>
             <div class="skills">
-                <svg class="circleContainer">
-                    <circle></circle>
+                <svg data-js="circleContainer" class="circleContainer">
+                    <circle data-js="circle"></circle>
                     <text x="59" y="68" class="circleText">85%</text>
                 </svg>
                 <h6 class="titleskill">Firebase</h6>
             </div>
             <div class="skills">
-                <svg class="circleContainer">
-                    <circle></circle>
+                <svg data-js="circleContainer" class="circleContainer">
+                    <circle data-js="circle"></circle>
                     <text x="59" y="68" class="circleText">85%</text>
                 </svg>
                 <h6 class="titleskill">Figma</h6>
