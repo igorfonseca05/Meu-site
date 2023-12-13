@@ -17,71 +17,87 @@
 <body>
     <header>
         <div data-js="darkenBackground" class="darkenBackground"></div>
-        <span data-js="externalIcon" class="material-symbols-outlined externalMenu menuIcon ">menu</span>
-        <nav data-js="menuMobile" class="menuMobile">
-            <div class="iconsNav">
-                <span data-js="internalIcon" class="material-symbols-outlined menuIcon">menu_open</span>
-                <span class="house">
-                    <figure class="menuImgContainer">
-                        <img src="img/bg.png" alt="">
-                    </figure>
-                </span>
-                </span>
-            </div>
 
-            <ul data-js="ulContainer" class="ulList">
-                <li class="liItems">
+        <div data-js="mobileMenu">
+            <span data-js="externalIcon" class="material-symbols-outlined externalMenu menuIcon ">menu</span>
+            <nav data-js="menuMobile" class="menuMobile">
+                <div class="iconsNav">
+                    <span data-js="internalIcon" class="material-symbols-outlined menuIcon">menu_open</span>
+                    <span class="house">
+                        <figure class="menuImgContainer">
+                            <img src="img/bg.png" alt="">
+                        </figure>
+                    </span>
+                    </span>
+                </div>
+                <ul data-js="ulContainer" class="ulList">
+                    <li class="liItems">
+                        <a href="#mainSection">
+                            <span class="material-symbols-outlined">home</span>
+                            Inicio
+                        </a>
+                    </li>
+                    <li class="liItems">
+                        <a href="#AboutMeSection">
+                            <span class="material-symbols-outlined">person_search</span>
+                            Sobre
+                        </a>
+                    </li>
+                    <li class="menuItems liItems">
+                        <a href="#sectionServices">
+                            <span class="material-symbols-outlined">design_services</span>
+                            Serviços
+                        </a>
+                    </li>
+                    <li class="liItems">
+                        <a href="#sectionSkills">
+                            <span class="material-symbols-outlined">sdk</span>
+                            Habilidades
+                        </a>
+                    </li>
+                    <li class="liItems">
+                        <a href="#">
+                            <span class="material-symbols-outlined">folder_open</span>
+                            Portifólio
+                        </a>
+                    </li>
+                    <li class="liItems">
+                        <a href="#">
+                            <span class="material-symbols-outlined">alternate_email</span>
+                            Contato
+                        </a>
+                    </li>
+                </ul>
+                <div class="footerMenuMobile">
+                    <p>
+                        <span class="material-symbols-outlined">copyright</span>
+                        Desenvolvido por <a style="margin-left: 4px;" href="#">Igor</a>
+                    </p>
+                </div>
+            </nav>
+        </div>
+        <nav data-js="desktopMenu" class="menuDesktop">
+            <ul>
+                <li class="menuItems">
                     <a href="#mainSection">
                         <span class="material-symbols-outlined">home</span>
-                        Inicio
-                    </a>
-                </li>
-                <li class="liItems">
-                    <a href="#AboutMeSection">
-                        <span class="material-symbols-outlined">person_search</span>
-                        Sobre
-                    </a>
-                </li>
-                <li class="liItems">
-                    <a href="#sectionSkills">
-                        <span class="material-symbols-outlined">sdk</span>
-                        Habilidades
-                    </a>
-                </li>
-                <li class="liItems">
-                    <a href="#">
-                        <span class="material-symbols-outlined">folder_open</span>
-                        Portifólio
-                    </a>
-                </li>
-                <li class="liItems">
-                    <a href="#">
-                        <span class="material-symbols-outlined">alternate_email</span>
-                        Contato
                     </a>
                 </li>
             </ul>
-            <div class="footerMenuMobile">
-                <p>
-                    <span class="material-symbols-outlined">copyright</span>
-                    Desenvolvido por <a style="margin-left: 4px;" href="#">Igor</a>
-                </p>
-            </div>
-        </nav>
-        <nav style="display: none;" class="menuDesktop">
             <ul>
-                <li>home</li>
-                <li>Sobre mim</li>
-                <li>Habilidades</li>
-                <li>Portifólio</li>
+                <li class="menuItems"><a href="#AboutMeSection">Sobre</a></li>
+                <li class="menuItems"><a href="#sectionServices">Serviços</a></li>
+                <li class="menuItems"><a href="#sectionSkills">Habilidades</a></li>
+                <li class="menuItems"><a href="">Portifólio</a></li>
+                <li class="menuItems"><a href="">Contato</a></li>
             </ul>
         </nav>
     </header>
 
-    <section  id="mainSection" class="mainSection">
+    <section id="mainSection" class="mainSection">
         <div class="mainContainer">
-            <h1 class="mainTitle">Web Developer</h1>
-            <p>Igor Fonseca</p>
+            <h1 class="mainTitle">Igor Fonseca</h1>
+            <p>Web Developer</p>
             <button class="cvButton">
                 <span class="material-symbols-outlined">download</span>
                 Download CV
@@ -89,7 +105,7 @@
         </div>
     </section>
 
-    <section  id="AboutMeSection" class="AboutMeSection">
+    <section id="AboutMeSection" class="AboutMeSection">
         <h1 class="sectionAboutMeTitle">Sobre</h1>
         <div class="card">
             <div class="cardInternalItems">
@@ -103,7 +119,9 @@
             <div class="aboutMeContainer">
                 <h1>Meu nome é <span>Igor</span></h1>
                 <p class="textAboutMe">
-                    Aos 28 anos, tenho me dedicado ao desenvolvimento web, com foco nas áreas client-side e server-side, destacando-me no front-end. Ciente da responsabilidade do desenvolvedor nesta área, busco equilibrar design e lógica de negócios na criação de produtos que atendam às necessidades do usuário.
+                    Aos 28 anos, tenho me dedicado ao desenvolvimento web, com foco nas áreas client-side e server-side,
+                    destacando-me no front-end. Ciente da responsabilidade do desenvolvedor nesta área, busco equilibrar
+                    design e lógica de negócios na criação de produtos que atendam às necessidades do usuário.
                 </p>
                 <address class="contactInformations">
                     <p class="pagraphsInforms"><span class="iconInforms"><span
@@ -125,8 +143,26 @@
         </div>
     </section>
 
-    <section class="services">
-
+    <section id="sectionServices" class="sectionServices">
+        <h1 class="sectionAboutMeTitle">Serviços</h1>
+        <div class="servicesContainer">
+            <div class="servicesItem">
+                <span class="material-symbols-outlined">phone_iphone</span>
+                <h3>Design <br> Responsivo</h3>
+                <p>O design responsivo ajusta automaticamente o layout do site para oferecer uma experiência consistente em diferentes dispositivos, priorizando acessibilidade e usabilidade.</p>
+            </div>
+            <div class="servicesItem">
+                <span class="material-symbols-outlined">code</span>
+                <h3>Desenvolvimento <br> Web</h3>
+                <p>
+                    Desenvolvedores web utilizam HTML, CSS e JavaScript para criar interfaces interativas, assegurando um design responsivo em diversos dispositivos. Priorizam acessibilidade e segurança, desempenhando um papel crucial na eficiência de soluções online.</p>
+            </div>
+            <div class="servicesItem">
+                <span class="material-symbols-outlined">settings</span>
+                <h3>Manutenção de <br> Websites</h3>
+                <p>A manutenção de websites é essencial para garantir seu desempenho contínuo, incluindo correções de bugs, atualizações de conteúdo e verificações de segurança. Profissionais especializados desempenham um papel vital nesse processo, assegurando uma experiência online consistente e confiáve</p>
+            </div>
+        </div>
     </section>
 
     <section id="sectionSkills" class="sectionSkills">
@@ -142,7 +178,7 @@
             <div class="skills">
                 <svg data-js="circleContainer" class="circleContainer">
                     <circle cx="100" cy="72" r="47" data-js="circle"></circle>
-                    <text x="59" y="68"  class="circleText">60%</text>
+                    <text x="59" y="68" class="circleText">60%</text>
                 </svg>
                 <h6 class="titleskill">Bootstrap</h6>
             </div>

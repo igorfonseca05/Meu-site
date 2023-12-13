@@ -6,6 +6,7 @@ const ulContainer = [...document.querySelector('[data-js="ulContainer"]').childr
 
 
 
+
 const openMenu = () => {
     backgroundMenu.style.display = 'block'
     menuMobile.classList.remove('closeMenu')
