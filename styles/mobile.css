@@ -539,9 +539,7 @@ span {
 }
 
 .circleContainer circle{
-   cx: 100;
-   cy: 72;
-   r: 47;
+
    fill: transparent;
    stroke-width: 4px;
    stroke: var(--detaisColor);

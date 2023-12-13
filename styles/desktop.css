@@ -26,23 +26,15 @@
 
     html,
     body {
-        background-color: var(--bgColor);
+        background-color: #343434;
 
-    }S
-
-    .mainContainer:only-child { 
-        text-align: start;
-        margin-left: 50px;
-    }
-
-    .cvButton {
-        margin: 0px;
     }
 
     .AboutMeSection {
         /* background-color: transparent; */
         background-color: transparent;
         flex-direction: column;
+
     }
 
     .card {
@@ -50,34 +42,33 @@
         flex-direction: row;
         justify-content: center;
         margin: 0 auto;
-        background-color: var(--cardDesktopColor);
-        width: 80%;
-        /* height: 450px; */
+        background-color: var(--backgroundColor);
+        width: 90%;
+        height: 450px;
         position: relative;
         border-radius: 0px;
-        max-width: 1000px;
+        max-width: 1200px;
         overflow: hidden;
         transition: width 0.5s ease-in-out;
         box-shadow: 0px;
         border: none;
+        align-items: center;
 
     }
 
     .cardInternalItems {
-        width: 28%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 33%;
         /* height: 0px; */
         /* height: 540px; */
-       background: none;
-        background-size: cover;
-        background-position: right;
+      /* background-color: #04ADBF; */
     }
 
-    .cardBackground {
-        display: none;
-    }
-
-    .cardBackground img {
-        display: none;
+    .imgContainer {
+        width: 100%;
+        margin-left: 60px;
     }
 
     .myImage {
@@ -105,76 +96,6 @@
         margin-top: 9px;
     }
 
-    .curveBg {
-        position: relative;
-        background-color: transparent;
-        width: 100%;
-        height: 100%;
-        margin-top: 20px;
-        border-radius: 0px;
-        border-top: none;
-        overflow: hidden;
-
-    }
-
-    .aligParagaph {
-        width: 100%;
-        background-color: #262626;
-    }
-
-
-    .gitRepositorieNum {
-        width: 100%;
-        display: flex;
-        align-items: center;
-        flex-direction: column;
-        margin: 8px 0px;
-    }
-
-    .gitRepositorieNum p {
-        text-align: center;
-        width: 150px;
-        height: 16px;
-        /* background-color: rgb(153, 112, 51); */
-        margin-right: 14px;
-        /* color: var(--IconColor); */
-        color: var(--detaisColor);
-        margin-bottom: 4px;
-        margin: 0 auto;
-        font-size: var(--fontParagraphs);
-    }
-
-    .gitRepositorieNum p:nth-child(2) {
-        /* color: var(--secondaryColor); */
-        color: var(--IconColor);
-    }
-
-    .projectsGif {
-        font-size: var(--fontParagraphs);
-    }
-
-    .informations {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        margin: 0 auto;
-        width: 84%;
-        height: 60%;
-        /* background-color: #04ADBF; */
-    }
-
-    .personalInformations p {
-        font-size: 1em;
-        color: var(--IconColor);
-    }
-
-    .contactInformations {
-        margin: 5px auto;
-        width: 100%;
-        color: var(--IconColor);
-    }
-
-
     .ButtonLearMore {
         border-radius: 0px;
     }
@@ -182,41 +103,30 @@
     .aboutMeContainer {
         display: block;
         /* font-weight: 200; */
-        line-height: 25px;
+        /* line-height: 0px; */
         /* display: block; */
         display: flex;
         flex-direction: column;
         justify-content: center;
-        flex-grow: 1;
-        width: 60%;
+        align-items: start;
+        flex-grow: 0;
+        width: 50%;
         color: var(--IconColor);
         /* background-color: #ff7f35; */
+        margin-left: 40px;
     }
-    .highLightParagraphs {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        /* background-color: #04ADBF; */
-        height: 35%;
-        width: 100%;
-        margin: 8px 0px;
-    }
-  
-    .highLightParagraphs p::before {
-       content: "";
-       position: absolute;
-       width: 10px;
-       height: 10px;
-       background-color: #04ADBF;
-       border-radius: 50%;
-       transform: translate(-16px, 4px);
+    .aboutMeContainer h1 {
+        text-align: start;
+        width: 187px;
+        margin-bottom: 10px;
+        border-bottom: 1px solid var(--detaisColor);
+        margin-bottom: 17px;
     }
 
-    .aboutMeContainer p {
-        font-size: 16px;
+    .aboutMeContainer p:is(.textAboutMe) {
+        font-size: 17px;
         color: var(--IconColor);
-        width: 80%;
-        margin-left: 24px;
+        width: 100%;
         /* font-family: Arial, Helvetica, sans-serif; */
     }
     

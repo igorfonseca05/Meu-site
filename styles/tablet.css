@@ -35,7 +35,7 @@
         display: flex;
         flex-direction: row;
         margin: 0 auto;
-        background-color: var(--bgColor);
+        /* background-color: var(--bgColor); */
         width: 90%;
         /* height: 80vh; */
         position: relative;
@@ -43,151 +43,47 @@
         max-width: none;
         transition: display 0.5s ease-in-out;
         /* flex-grow: 1; */
-        overflow: hidden;
+        /* overflow: hidden; */
+        align-items: center;
         margin-top: 0px;
-        box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.527);
+        /* box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.527); */
         border: none;
 
     }
 
     .cardInternalItems {
-        width: 28%;
-        background: none;
-        background-size: cover;
-        background-position: center;
+        width: 40%;
 
     }
 
-    .cardBackground {
-        display: none;
-        width: 100%;
-        height: 150px;
-        /* border-bottom: 2px solid var(--secondaryColor); */
-        /* overflow: hidden; */
-    }
-
-
-    .cardBackground img {
-        width: 100%;
-        height: 100%;
-        border-radius: 20px 20px 0px 0px;
+    .imgContainer{
+        margin-top: 0px;
+        width: 82%;
+        min-width: 250px;
+        max-height: 300px;
+      
+        /* background-color: #ff7f35; */
     }
 
     .myImage {
         position: relative;
-        width: 120px;
-        height: 120px; 
+        width: 100%;
+        max-height: 274px;
         top: 0px;
         margin: 0 auto;
         box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.425);
-        border: 2px solid var(--detaisColor);
+        border: 0px;
         transition:  0.5s ease-in-out;
-        transform: translate(0px, 16px);
+        overflow: hidden;
     }
-
-    .curveBg {
+    .myImage img {
         width: 100%;
-        transition: width 0.7s ease-in-out;
-        height: 100%;
-        background-color: transparent;
-        margin-top: 30px;
-        border-radius:  0px;
-        border-top: none;
-        /* flex-grow: 3; */
+        height: 100%; 
+        transform: translate(2px, 12px);
     }
 
-    .aligParagaph {
-        width: 100%;
-        background-color: #262626;
-    }
-
-
-    .gitRepositorieNum {
-        /* border-top: 1px solid var(--detaisColor); */
-        /* border-bottom: 1px solid var(--detaisColor); */
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        margin: 16px 0px 14px 0px;
-        height: 9px;
-    }
-
-    .gitRepositorieNum p {
-        width: 150px;
-        height: 16px;
-        /* background-color: rgb(153, 112, 51); */
-        margin-right: 0px;
-        /* color: var(--IconColor); */
-        color: var(--detaisColor);
-        margin-bottom: 0px;
-        margin: 0 auto;
-        font-size: var(--fontParagraphs);
-
-    }
-
-
-    .projectsGif, [data-js="reposNum"]{
-        /* color: var(--secondaryColor); */
-        color: var(--IconColor);
-        width: 100%;
-        margin: 0px;
-        /* background-color: #49c78c; */
-        /* font-weight: 600; */
-    }
-
-    .informations {
-        display: flex;
-        flex-direction: column;
-        /* margin: 0 auto; */
-        width: 84%;
-        /* background-color: #04ADBF; */
-    }
-
-    .personalInformations p {
-        font-size: 0.8em;
-        color: var(--IconColor);
-    }
-
-    .contactInformations {
-        margin: 8px auto;
-        width: 100%;
-    }
-
-    .pagraphsInforms {
-        color: var(--IconColor);
-        font-size: var(--fontParagraphs);
-    }
-
-    .iconInforms {
-        display: flex;
-        flex-wrap: wrap;
-        align-items: center;
-        justify-content: center;
-        color: var(--detaisColor);
-        ;
-        margin-right: 4px;
-    }
-
-    .cardIcon {
-        margin-right: 4px;
-        font-size: var(--fontParagraphs);
-    }
-
-    .ButtonLearMore {
-        width: 100%;
-        height: 3em;
-        font-family: var(--fontProject);
-        font-size: var(--fontSubtitulos);
-        border: none;
-        border-radius: 0px;
-        background-color: var(--detaisColor);
-        cursor: pointer;
-    }
-
-    .ButtonLearMore:hover {
-        background-color: rgb(0, 229, 255);
-        box-shadow: 0px 0px 3px 1px var(--detaisColor);
+    .backgroundImage{
+        transform: translate(-8px, 8px);
     }
 
     .aboutMeContainer {
@@ -210,37 +106,54 @@
         /* background-color: #ff7f35; */
     }
 
-    .highLightParagraphs {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        /* background-color: #04ADBF; */
-        height: 35%;
-        width: 100%;
-        margin: 8px 0px;
-    }
-  
-    .highLightParagraphs p::before {
-       content: "";
-       position: absolute;
-       width: 10px;
-       height: 10px;
-       background-color: #04ADBF;
-       border-radius: 50%;
-       transform: translate(-16px, 4px);
-    }
-
-    .aboutMeContainer p {
+    .textAboutMe {
         font-size: 16px;
         color: var(--IconColor);
-        width: 80%;
-        margin-left: 24px;
+        width: 100%;
+        min-height: 95px;
+        /* margin-left: 0px; */
         /* font-family: Arial, Helvetica, sans-serif; */
     }
     
-    .aboutMeContainer .highLightParagraphs  p {
-        /* ma-bottom: 0px; */
-        margin: 8px 0px 8px 65px; 
+    .contactInformations {
+        margin: 8px auto;
+        width: 100%;
+    }
+
+    .aboutMeContainer p:is(.pagraphsInforms) {
+        color: var(--IconColor);
+        font-size: 12px;
+        /* background-color: rebeccapurple; */
+    }
+
+    .iconInforms {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        color: var(--detaisColor);
+        margin-right: 4px;
+    }
+
+    .cardIcon {
+        margin-right: 4px;
+        font-size: var(--fontParagraphs);
+    }
+
+    .ButtonLearMore {
+        width: 156px;
+        height: 44px;
+        font-family: var(--fontProject);
+        font-size: var(--fontSubtitulos);
+        border: none;
+        border-radius: 0px;
+        background-color: var(--detaisColor);
+        cursor: pointer;
+    }
+
+    .ButtonLearMore:hover {
+        background-color: rgb(0, 229, 255);
+        box-shadow: 0px 0px 3px 1px var(--detaisColor);
     }
 
 
