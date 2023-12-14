@@ -33,7 +33,7 @@
     }
 
     .sectionAboutMeTitle {
-        padding-top: 80px;
+        padding-top: 120px;
         margin-bottom: 15px;
     
     }
@@ -232,7 +232,25 @@
     }
 
 
+    .servicesContainer {
+        display: flex;
+        /* flex-direction: column; */
+        justify-content: center;
+        flex-wrap: wrap;
+        /* background-color: rebeccapurple; */
+        width: 100%;
+        /* height: 80vh; */
+        margin-top: 110px;
+    }
 
+
+    /* Section skills */
+
+    .skills {
+        width: 250px;
+        /* background: rebeccapurple; */
+    }
+    
    
 
 

@@ -359,6 +359,8 @@ span {
 
 }
 
+
+
 .mainTitle:hover {
     color: rgb(0, 229, 255);
     text-shadow: 0px 0px 30px var(--detaisColor);
@@ -541,7 +543,7 @@ span {
 }
 
 .servicesItem:hover {
-    transform: scale(1.04);
+    transform: scale(1.02);
 }
 
 .servicesItem span {
@@ -567,14 +569,6 @@ span {
    /* background-color: var(--secondaryColor); */
    font-size: 14px;
 }
-
-
-
-
-
-
-
-
 
 
 
@@ -609,7 +603,7 @@ span {
 
 .skills {
     height: 200px;
-    width: 250px;
+    width: 150px;
     /* background: rebeccapurple; */
 }
 
