@@ -661,6 +661,122 @@ span {
     background-color: #04ADBF;
 }
 
+.container {
+    /* background-color: var(--secondaryColor); */
+    display: block;
+    margin: 0 auto;
+    position: absolute;
+    width: 100%;
+    
+}
+
+.front {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 auto;
+    max-width: 200px;
+    background-color: rgb(62, 139, 255);
+    height: auto;
+    height: 35px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    border-radius: 15px;
+    margin-top: 16px;
+}
+
+.textContainer{
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+    /* background-color: red; */
+    width: 100%;
+    height: 100%;
+}
+
+.icon {
+    margin-right: 10px;
+    user-select: none;
+    cursor: pointer;
+    transform: rotateZ(180deg);
+    transition: 0.2s ease-in-out;
+}
+
+.rotateIcon {
+    transform: rotateZ(0deg);
+    transition: 0.2s ease-in-out;
+}
+
+.back {
+    user-select: none;
+    overflow: hidden;
+    border-radius: 15px;
+    height: 0px;
+    margin: 5px auto;
+    max-width: 200px;
+    /* height: auto; */
+    padding: 0px;
+    background-color: rgb(245, 245, 245);
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+
+li{
+    width: 100%;
+    height: 100%;
+    list-style: none;
+    padding: 10px;
+}
+
+a {
+    /* display: block; */
+    text-decoration: none;
+    color: rgb(87, 87, 87);
+}
+
+li:hover {
+    background-color: rgba(122, 122, 122, 0.137); 
+}
+
+li:hover > a {
+
+    color: rgb(12, 12, 12);
+}
+
+.hideUl {
+    padding: 0px;
+    margin: 0px;
+}
+
+.projects {
+    display: flex;
+    /* flex-direction: column; */
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    /* background-color: var(--secondaryColor); */
+    margin: 100px auto;
+    gap: 8px
+}
+
+.projects div {
+    width: 170px;
+    height: 100px;
+    background-color: #04ADBF;
+    transition: 0.7s ease-in-out;
+}
+
+.projects div:is([data-js="JavaScript"]) {
+  
+    background-color: #5fe636;
+}
+.projects div:is([data-js="HTML"]) {
+   
+    background-color: #ffc401;
+}
+.projects div:is([data-js="NodeJs"]) {
+   
+    background-color: #e636b1;
+}
+
 
 
 
