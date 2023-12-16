@@ -641,6 +641,26 @@ span {
 }
 
 
+/* Section portifolio */
+
+.portifolioSection {
+    background-color: #4d4d4d;
+
+}
+
+.link {
+    text-decoration: none;
+}
+
+.li {
+    list-style: none;
+}
+
+.projectSelector {
+    display: flex;
+    background-color: #04ADBF;
+}
+
 
 
 
