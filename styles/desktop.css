@@ -260,18 +260,23 @@
         display: none;
 
     }
+
     .projects {
-        width: 1200px; 
-        /* height: 410px; */
-        margin: 20px auto;
+        width: 1000px;
+        /* height: 300px; */
+        margin: 20px auto 0px auto;
         gap: 15px;
     }
 
     .projects div {
-        width: 250px;
-        height: 200px;
+        width: 200px;
+        height: 150px;
         background-color: #04ADBF;
         transition: 0.7s ease-in-out;
+    }
+
+    .seeMore {
+        padding: 16px;
     }
 
 

@@ -8,6 +8,7 @@ const seeMoreButton = document.querySelector('[data-js="seeMoreButton"]')
 
 
 
+
 const openMenu = () => {
     backgroundMenu.style.display = 'block'
     menuMobile.classList.remove('closeMenu')
@@ -33,41 +34,15 @@ const getGitHubDatas = () =>
         .catch(console.log)
 
 
-const showDGitDatasOnScreen = async () => {
-    const amountProject =  document.querySelector('[data-js="reposNum"]')
-    const mainText = document.querySelector('[data-js="aboutMePragraph"]')
-    const dadosGit = await getGitHubDatas()
-
-    amountProject.style.textShadow = "0px 0px 8px #00e5ff"
-    mainText.textContent = dadosGit.bio
-    // amountProject.textContent = dadosGit.public_repos 
-    
-    addAnimationcard(amountProject , dadosGit.public_repos )
-}
-
-
-const addAnimationcard = (numContainer, amountProjects) => {
-    const timer = setInterval(() => {
-        numContainer.style.color = '#00e5ff'
-        const value = ++numContainer.textContent
-       
-       if(value === amountProjects) {
-           clearInterval(timer)
-           numContainer.style.textShadow = ""
-           return
-       }
-    }, 70)
-}
-
 
 const animateSkills = () => {
     const radius = 47
     const strokeDashoffset = 360;
-    const circumference = Math.round(2* Math.PI * radius)
+    const circumference = Math.round(2 * Math.PI * radius)
 
     const porcentSkills = [80, 60, 60, 75, 70, 80, 85, 80]
-    const from = {strokeDasharray: 360}
-    
+    const from = { strokeDasharray: 360 }
+
     const getCircles = document.querySelectorAll('[data-js="circle"]')
 
 
@@ -77,11 +52,11 @@ const animateSkills = () => {
         // circle.style.textShadow = "0px 0px 15px #00e5ff"
         const porcent = (circumference * `${porcentSkills[index]}`) / 100;
         const showporcent = porcent + strokeDashoffset
-        const to = {strokeDasharray: showporcent}
+        const to = { strokeDasharray: showporcent }
 
         circle.animate([from, to], {
             duration: 2000,
-            fill:"forwards",
+            fill: "forwards",
         })
     })
 }
@@ -134,25 +109,41 @@ const addEventsOnDropDown = () => {
     }
 }
 
+const hideButtonSeeMore = (projects) => {
+
+    const IsLessThan = projects
+
+    if (IsLessThan <= 8) return seeMoreButton.style.display = 'none'
+       seeMoreButton.style.display = 'block'
+
+}
+
 const hideNonSelectedItem = (e) => {
     const projectList = [...document.querySelector('[data-js="projectsList"]').children]
 
-    projectList.forEach(project => {
+    let count = 0
 
-        if(e.target.textContent === 'Todos') {
+    projectList.forEach((project) => {
+
+        if (e.target.textContent === 'Todos') {
             project.style.display = 'block'
+            count = 10
             return
         }
 
-        if(project.dataset.js !== e.target.textContent) {
+        if (project.dataset.js !== e.target.textContent) {
             project.style.display = 'none'
             return
         }
-            project.style.display = 'block'
+        project.style.display = 'block'
+        count++
+
     })
+
+    hideButtonSeeMore(count)
 }
 
-const closeDropAndRotateIcon = () => {
+const closeDropDownAfterSelected = () => {
     createAnimation(internalHightLiContainer(), 0)
     addRotateToButtom()
 }
@@ -164,21 +155,26 @@ const showNameSelectedItem = (e) => {
 
     hideNonSelectedItem(e)
 
-    closeDropAndRotateIcon()   
+    closeDropDownAfterSelected()
+}
+
+
+const changeSeeMoreValue = (button) => {
+
+    if (button.textContent === 'Ver mais') {
+        button.innerHTML = 'Ver menos'
+        return
+    }
+    button.innerHTML = 'Ver mais'
 }
 
 const showHidenProjects = () => {
     const projectList = document.querySelector('[data-js="projectsList"]')
-    const seeMoreButton = document.querySelector('[data-js="seeMoreButton"]')
-  
+
     projectList.classList.toggle('showHideProjects')
 
-    if(seeMoreButton.textContent === 'Ver mais') {
-        seeMoreButton.innerHTML = 'Ver menos'
-        return
-    }
-        seeMoreButton.innerHTML = 'Ver mais'
-   
+    changeSeeMoreValue(seeMoreButton)
+
 }
 
 button.addEventListener('click', addEventsOnDropDown)
