@@ -733,12 +733,11 @@ a {
     color: rgb(87, 87, 87);
 }
 
-li:hover {
+.item:hover {
     background-color: rgba(122, 122, 122, 0.137); 
 }
 
 li:hover > a {
-
     color: rgb(12, 12, 12);
 }
 
@@ -782,7 +781,7 @@ li:hover > a {
     text-align: center;
     color: var(--detaisColor);
     cursor: pointer;
-    padding: 48px;
+    padding: 24px;
 }
 
 .seeMore:hover {
