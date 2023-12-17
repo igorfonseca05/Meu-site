@@ -137,11 +137,20 @@ const hideNonSelectedItem = (e) => {
     const projectList = [...document.querySelector('[data-js="projectsList"]').children]
 
     projectList.forEach(project => {
+
+        if(e.target.textContent === 'Todos') {
+            project.style.display = 'block'
+            return
+        }
+
         if(project.dataset.js !== e.target.textContent) {
             project.style.display = 'none'
             return
         }
-        project.style.display = 'block'
+            project.style.display = 'block'
+
+
+
     })
 }
 
