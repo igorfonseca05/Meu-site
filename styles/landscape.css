@@ -24,5 +24,16 @@
 
 @media screen and (min-width: 480px) and (max-width: 750px) {
 
+    .projects {
+        gap: 10px;
+        width: 75%;    
+    }
+
+    .projects div {
+        width: 170px;
+        height: 140px;
+        background-color: #04ADBF;
+        transition: 0.7s ease-in-out;
+    }
    
 }

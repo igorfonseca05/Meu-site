@@ -459,8 +459,6 @@ span {
 }
 
 
-
-
 .contactInformations {
     margin: 18px auto;
     width: 100%;
@@ -727,7 +725,7 @@ li{
     padding: 10px;
 }
 
-a {
+.link {
     /* display: block; */
     text-decoration: none;
     color: rgb(87, 87, 87);
@@ -737,7 +735,7 @@ a {
     background-color: rgba(122, 122, 122, 0.137); 
 }
 
-li:hover > a {
+li:hover > .link {
     color: rgb(12, 12, 12);
 }
 
@@ -753,10 +751,11 @@ li:hover > a {
     justify-content: center;
     /* align-items: start; */
     width: 100%;
-    height: 424px;
+    /* max-height: 424px; */
+    height: 435px;
     /* background-color: var(--secondaryColor); */
     margin: 100px auto 0px auto;
-    gap: 8px;
+    gap: 10px;
     overflow: hidden;
     align-content: start;
 
@@ -765,17 +764,20 @@ li:hover > a {
 .showHideProjects {
     overflow: visible;
     height: 100%;
+    transition: 0.7s ease-in-out;
+    animation: open 1s ease-in-out forwards;
 }
+
 
 .projects div {
     width: 170px;
-    height: 100px;
+    height: 140px;
     background-color: #04ADBF;
     transition: 0.7s ease-in-out;
 }
 
 .seeMore {
-    position: relative;
+    /* position: relative; */
     display: block;
     /* background-color: #5fe636; */
     text-align: center;
@@ -790,6 +792,10 @@ li:hover > a {
 }
 
 .hideDiv {
+    display: none;
+}
+
+.SeletorDesktopContainer {
     display: none;
 }
 

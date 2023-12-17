@@ -6,7 +6,20 @@ const ulContainer = [...document.querySelector('[data-js="ulContainer"]').childr
 
 const seeMoreButton = document.querySelector('[data-js="seeMoreButton"]')
 
+const selectorBar = document.querySelector('[data-js="SeletorDesktop"]')
 
+
+const getGitHubDatas = () =>
+    fetch('https://api.github.com/users/igorfonseca05/repos')
+        .then(res => res.json())
+        .catch(console.log)
+
+const promise =  async() => {
+    const dados = await getGitHubDatas()
+    console.log(dados)
+}
+
+promise()
 
 
 const openMenu = () => {
@@ -26,14 +39,6 @@ const closeMenuOnClickItem = () => {
         li.addEventListener('click', closeMenu)
     })
 }
-
-
-const getGitHubDatas = () =>
-    fetch('https://api.github.com/users/igorfonseca05')
-        .then(res => res.json())
-        .catch(console.log)
-
-
 
 const animateSkills = () => {
     const radius = 47
@@ -187,6 +192,7 @@ externalMenuIcon.addEventListener('click', openMenu)
 internalMenuIcon.addEventListener('click', closeMenu)
 backgroundMenu.addEventListener('click', closeMenu)
 seeMoreButton.addEventListener('click', showHidenProjects)
+selectorBar.addEventListener('click', (e) => showNameSelectedItem(e))
 
 
 

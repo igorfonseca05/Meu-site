@@ -166,6 +166,20 @@
         box-shadow: 0px 0px 3px 1px var(--detaisColor);
     }
 
+    .projects {
+        gap: 10px;
+        width: 75%;    
+    }
+    
+
+
+    .projects div {
+        width: 180px;
+        height: 210px;
+        background-color: #04ADBF;
+        transition: 0.7s ease-in-out;
+    }
+
 
     @media screen and (max-width: 330px) {
         .gitRepositorieNum {
@@ -184,29 +198,4 @@
             /* background-color: #04ADBF; */
         }
     }
-
-
-
-
-
-
-
-    @media screen and (max-width: 330px) {
-        .gitRepositorieNum {
-            display: none;
-        }
-
-        .myImage {
-            transition: 0.4s ease-in-out;
-            /* transform: translateX(10%); */
-            margin: 0 auto;
-        }
-
-        .informations {
-            margin: 75px auto 10px auto;
-            /* width: 84%; */
-            /* background-color: #04ADBF; */
-        }
-    }
-
 }

@@ -34,7 +34,7 @@
 
     .sectionAboutMeTitle {
         padding-top: 100px;
-        margin-bottom: 15px;
+        margin-bottom: 20px;
 
     }
 
@@ -256,21 +256,23 @@
         margin-top: 40px;
     }
 
+    /* Section protifolio */
+
     .container {
         display: none;
 
     }
 
     .projects {
-        width: 1000px;
-        /* height: 300px; */
-        margin: 20px auto 0px auto;
-        gap: 15px;
+        width: 65%;
+        /* height: 360px; */
+        margin: 0 auto;
+
     }
 
     .projects div {
-        width: 200px;
-        height: 150px;
+        width: 180px;
+        height: 210px;
         background-color: #04ADBF;
         transition: 0.7s ease-in-out;
     }
@@ -279,5 +281,31 @@
         padding: 16px;
     }
 
+    .SeletorDesktopContainer {
+        display: block;
+        /* background-color: #04ADBF; */
+        margin-bottom: 10px;
+    }
 
+    .SeletorDesktop {
+        margin: 0 auto;
+        display: flex;
+        width: 50%;
+        color: #00e5ff;
+    }
+
+    .seeMore:hover {
+        color: #00e5ff;
+        text-shadow: 0px 0px 10px #00e5ff;
+    }
+
+    .selectorBarLinks {
+        text-decoration: none;
+        color: var(--detaisColor);
+    }
+
+    .selectorBarLinks:hover {
+        color: #00e5ff;
+        text-shadow: 0px 0px 10px #00e5ff;
+    }
 }
