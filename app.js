@@ -4,6 +4,7 @@ const menuMobile = document.querySelector('[data-js="menuMobile"]')
 const backgroundMenu = document.querySelector('[data-js="darkenBackground"]')
 const ulContainer = [...document.querySelector('[data-js="ulContainer"]').children]
 
+const seeMoreButton = document.querySelector('[data-js="seeMoreButton"]')
 
 
 
@@ -148,9 +149,6 @@ const hideNonSelectedItem = (e) => {
             return
         }
             project.style.display = 'block'
-
-
-
     })
 }
 
@@ -169,17 +167,26 @@ const showNameSelectedItem = (e) => {
     closeDropAndRotateIcon()   
 }
 
+const showHidenProjects = () => {
+    const projectList = document.querySelector('[data-js="projectsList"]')
+    const seeMoreButton = document.querySelector('[data-js="seeMoreButton"]')
+  
+    projectList.classList.toggle('showHideProjects')
 
-
-
-
+    if(seeMoreButton.textContent === 'Ver mais') {
+        seeMoreButton.innerHTML = 'Ver menos'
+        return
+    }
+        seeMoreButton.innerHTML = 'Ver mais'
+   
+}
 
 button.addEventListener('click', addEventsOnDropDown)
 containerItem.addEventListener('click', (e) => showNameSelectedItem(e))
 externalMenuIcon.addEventListener('click', openMenu)
 internalMenuIcon.addEventListener('click', closeMenu)
 backgroundMenu.addEventListener('click', closeMenu)
-
+seeMoreButton.addEventListener('click', showHidenProjects)
 
 
 

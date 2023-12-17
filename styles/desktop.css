@@ -35,7 +35,7 @@
     .sectionAboutMeTitle {
         padding-top: 100px;
         margin-bottom: 15px;
-    
+
     }
 
     [data-js="desktopMenu"] {
@@ -73,6 +73,7 @@
         padding-left: 16px;
         /* background-color: #ff7f35; */
     }
+
     .menuDesktop ul span {
         display: flex;
         justify-content: start;
@@ -183,10 +184,10 @@
         margin-top: 9px;
     }
 
-    .backgroundImage{
+    .backgroundImage {
         width: 64%;
         height: 100%;
-   
+
         /* transform: translate(35px, 8px); */
         /* z-index: -1; */
     }
@@ -251,11 +252,26 @@
         /* background: rebeccapurple; */
     }
 
-    .svgContainer{
+    .svgContainer {
         margin-top: 40px;
     }
-    
-   
+
+    .container {
+        display: none;
+
+    }
+    .projects {
+        width: 1200px; 
+        height: 410px;
+        margin: 20px auto;
+    }
+
+    .projects div {
+        width: 250px;
+        height: 200px;
+        background-color: #04ADBF;
+        transition: 0.7s ease-in-out;
+    }
 
 
 }
