@@ -110,11 +110,15 @@ const addEventsOnDropDown = () => {
 }
 
 const hideButtonSeeMore = (projects) => {
+    const seeMoreContainer = document.querySelector('[data-js="seeMoreContainer"]')
 
     const IsLessThan = projects
 
-    if (IsLessThan <= 8) return seeMoreButton.style.display = 'none'
-       seeMoreButton.style.display = 'block'
+    if (IsLessThan <= 8) {
+        seeMoreContainer.style.display = 'none'
+        return 
+    }
+        seeMoreContainer.style.display = 'block'
 
 }
 
