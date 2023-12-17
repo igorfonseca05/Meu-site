@@ -755,8 +755,8 @@ li:hover > a {
     /* align-items: start; */
     width: 100%;
     height: 424px;
-    background-color: var(--secondaryColor);
-    margin: 100px auto 8px auto;
+    /* background-color: var(--secondaryColor); */
+    margin: 100px auto 0px auto;
     gap: 8px;
     overflow: hidden;
     align-content: start;
@@ -782,6 +782,7 @@ li:hover > a {
     text-align: center;
     color: var(--detaisColor);
     cursor: pointer;
+    padding: 48px;
 }
 
 .seeMore:hover {

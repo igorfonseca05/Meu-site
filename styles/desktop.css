@@ -262,8 +262,9 @@
     }
     .projects {
         width: 1200px; 
-        height: 410px;
+        /* height: 410px; */
         margin: 20px auto;
+        gap: 15px;
     }
 
     .projects div {
