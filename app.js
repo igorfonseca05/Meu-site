@@ -19,7 +19,7 @@ const promise =  async() => {
     console.log(dados)
 }
 
-promise()
+// promise()
 
 
 const openMenu = () => {
@@ -49,9 +49,7 @@ const animateSkills = () => {
     const from = { strokeDasharray: 360 }
 
     const getCircles = document.querySelectorAll('[data-js="circle"]')
-
-
-
+    
     getCircles.forEach((circle, index) => {
         // circle.style.stroke = '#00e5ff'
         // circle.style.textShadow = "0px 0px 15px #00e5ff"

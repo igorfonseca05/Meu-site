@@ -1,14 +1,47 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,200;6..12,300;6..12,400;6..12,500;6..12,600;6..12,700;6..12,800;6..12,900;6..12,1000&display=swap');
 
 :root {
-    --backgroundColor:  #343434;
-    --secondaryColor: #ff7f35;
-    --detaisColor: #04ADBF;
-    --menuMobColor: #262626;
-    --bgColor : #222222;
+   /* Cores Background */
+   --cor-primaria: #2c3e50; 
+   --cor-primaria-claro: #485c6f;
+   --cor-primaria-escuro:  #1f2c38;
+
+   /* Cor titulo seção */
+   --TitleSectionsColor: #D9D9D9;
+
+   /* Cores menu mobile */
+   --menuMobColor: #262626;
+   --lineMenuColor: #02afc2;
+   --LiHover: #4d4d4d;
+   --linkFooter: #04dac4;
+
+   /* PopUp menu mobile */
+
+   --PopUpColor: #0d0d0da1;
+
+    /* Detalhes e hover */
+    --detaisColor: #15e1f8;
+    --dataisHover:  #00e5ff;
+
+    /* Cor card */
+    --cardServicesColor: #636363;
     --IconColor: #D9D9D9;
-    --cardBackground: #696969;
+
+    /* Cor background minha imagem */
+    --Img-Background: #262626;
  
+    /* cores Skills */
+    --titleSkillsColor: #fff ;
+    --circleSkillColor: #fff ;
+    --colorTSkillText: #fff ;
+
+    /* shadows */
+    --shadows: rgba(0, 0, 0, 0.534);
+
+    /* Cor botão portifolio */
+
+    --ButtonPortifolio:rgb(62, 139, 255) ;
+    
 
     --fontDestaque: 35px;
     --fontHeadLine: 30px;
@@ -46,7 +79,7 @@ body {
     display: none;
     width: 100%;
     height: 100vh;
-    background-color: #0d0d0da1;
+    background-color: var(--PopUpColor);
     /* position: absolute; */
     position: fixed;
     z-index: 3;
@@ -86,7 +119,7 @@ span {
 }
 
 .externalMenu:hover {
-    color: rgb(0, 229, 255)
+    color: var(--dataisHover)
 }
 
 .menuIcon {
@@ -112,7 +145,7 @@ span {
 .menuImgContainer {
     width: 48px;
     height: 48px;
-    background-color: #4d4d4d;
+    background-color: var(--menuMobColor);
     border-radius: 50%;
     overflow: hidden;
 
@@ -157,8 +190,8 @@ span {
     /* background-color: brown; */
     height: 50%;
     width: 100%;
-    border-top: 1px solid #7ef2e654;
-    border-bottom: 1px solid #7ef2e644;
+    border-top: 1px solid var(--lineMenuColor);
+    border-bottom: 1px solid var(--lineMenuColor);
 }
 
 .liItems {
@@ -174,7 +207,7 @@ span {
 }
 
 .liItems:hover {
-    background-color: #4d4d4d;
+    background-color: var(--LiHover);
 }
 
 .liItems a {
@@ -191,14 +224,9 @@ span {
     /* background-color: #D95A11; */
 }
 
-.liItems a:hover {
-    background-color: #595959;
-}
-
 .liItems a:not(.link) {
     width: 100%;
     height: 100%;
-
 }
 
 .liItems a span {
@@ -223,7 +251,7 @@ span {
 }
 
 .footerMenuMobile p a {
-    color: #8efff4;
+    color: var(--linkFooter);
 
     text-decoration: none;
 }
@@ -274,7 +302,7 @@ span {
     justify-content: center;
     /* flex-direction: column; */
     height: 100vh;
-    /* background-color: var(--menuMobColor); */
+    /* background-color: var(--cardServicesColor); */
     overflow-x: hidden;
     background: url(../img/menino.jpg) no-repeat;
     background-size: cover;
@@ -328,7 +356,7 @@ span {
 }
 
 .cvButton:hover {
-    background-color: rgb(0, 229, 255);
+    background-color: var(--dataisHover);
     box-shadow: 0px 0px 3px 1px var(--detaisColor);
 }
 
@@ -336,13 +364,11 @@ span {
     margin-right: 4px;
 }
 
-
-
 /* Section Two */
 
 .AboutMeSection {
     /* background-image: linear-gradient(180deg, #000000 0%, #434343 100%); */
-    background-color: #343434;
+    background-color: var(--cor-primaria);
     flex-direction: column;
     font-family: 'Nunito Sans', sans-serif;
 }
@@ -355,14 +381,14 @@ span {
     font-size: var(--fontHeadLine);
     letter-spacing: 0px;
     text-transform: uppercase;
-    color: var(--IconColor);
+    color: var(--TitleSectionsColor);
 
 }
 
 
 
 .mainTitle:hover {
-    color: rgb(0, 229, 255);
+    color: var(--dataisHover);
     text-shadow: 0px 0px 30px var(--detaisColor);
 }
 
@@ -403,7 +429,7 @@ span {
     /* margin-left: 35px; */
     width: 100%;
     /* height: ; */
-    background-color: var(--cardBackground);
+    background-color: var(--Img-Background);
     /* border-radius: 50%; */
     /* overflow: hidden; */
     top: 0px;
@@ -502,7 +528,7 @@ span {
 }
 
 .ButtonLearMore:hover {
-    background-color: rgb(0, 229, 255);
+    background-color: var(--dataisHover);
     box-shadow: 0px 0px 10px 1px var(--detaisColor);
 }
 
@@ -514,7 +540,7 @@ span {
 
 
 .sectionServices {
-    background-color: var(--oddbackgroundColor);
+    background-color: var(--cor-primaria-claro);
 }
 
 
@@ -534,10 +560,10 @@ span {
     /* height: 260px; */
     /* margin-top: 10px; */
     margin-left: 10px;
-    background-color: var(--menuMobColor);
+    background-color: var(--cardServicesColor);
     margin-bottom: 10px;
     padding: 20px;
-    box-shadow: 0px 0px 5px black;
+    box-shadow: 0px 0px 5px var(--shadows);
 }
 
 .servicesItem:hover {
@@ -576,16 +602,10 @@ span {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color:var(--menuMobColor);
+    background-color:var(--cor-primaria-escuro);
     height: auto;
 }
 
-
-
-.titleSectionSkill:hover{
-    color: rgb(0, 229, 255);
-    text-shadow: 0px 0px 30px var(--detaisColor);
-}
 
 .svgContainer{
     display: flex;
@@ -628,22 +648,22 @@ span {
 
 
 .titleskill {
-    color: white;
+    color: var(--titleSkillsColor);
     font-weight: 200;
     font-size: var(--fontProject);
     transform: translateY(-55px);
 }
 
 .circleText{
-    stroke: white;
-    color: white;
+    stroke: var(--circleSkillColor);
+    color: var(--colorTSkillText);
 }
 
 
 /* Section portifolio */
 
 .portifolioSection {
-    background-color: #4d4d4d;
+    background-color: var(--cor-primaria);
 
 }
 
@@ -657,7 +677,7 @@ span {
 
 .projectSelector {
     display: flex;
-    background-color: #04ADBF;
+    background-color: #11f36f;
 }
 
 .container {
@@ -675,7 +695,7 @@ span {
     justify-content: space-between;
     margin: 0 auto;
     max-width: 200px;
-    background-color: rgb(62, 139, 255);
+    background-color: var(--ButtonPortifolio);
     height: auto;
     height: 35px;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
@@ -718,7 +738,7 @@ span {
     box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
 }
 
-li{
+.item{
     width: 100%;
     height: 100%;
     list-style: none;
@@ -735,7 +755,7 @@ li{
     background-color: rgba(122, 122, 122, 0.137); 
 }
 
-li:hover > .link {
+.item:hover > .link {
     color: rgb(12, 12, 12);
 }
 
@@ -764,8 +784,6 @@ li:hover > .link {
 .showHideProjects {
     overflow: visible;
     height: 100%;
-    transition: 0.7s ease-in-out;
-    animation: open 1s ease-in-out forwards;
 }
 
 
@@ -773,7 +791,14 @@ li:hover > .link {
     width: 170px;
     height: 140px;
     background-color: #04ADBF;
-    transition: 0.7s ease-in-out;
+    transition: 0.2s ease-in-out;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    
+}
+
+.projects div:hover {
+    transform: scale(1.02);
+    box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
 }
 
 .seeMore {
@@ -799,18 +824,7 @@ li:hover > .link {
     display: none;
 }
 
-.projects div:is([data-js="JavaScript"]) {
-  
-    background-color: #5fe636;
-}
-.projects div:is([data-js="HTML"]) {
-   
-    background-color: #ffc401;
-}
-.projects div:is([data-js="NodeJs"]) {
-   
-    background-color: #e636b1;
-}
+
 
 
 
