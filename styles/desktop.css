@@ -246,6 +246,25 @@
 
     }
 
+    .SeletorDesktopContainer {
+        display: block;
+        /* background-color: #04ADBF; */
+        margin-bottom: 10px;
+    }
+
+    .SeletorDesktop {
+        margin: 0 auto;
+        display: flex;
+        width: 50%;
+        color: #00e5ff;
+        justify-content: space-around;
+        text-align: center;
+    }
+
+    .SeletorDesktop li {
+      list-style: none;
+    }
+
     .projects {
         width: 65%;
         height: 360px;
@@ -265,23 +284,9 @@
         background-color: #04ADBF;
         transition: 0.4s ease-in-out;
     }
-
+    
     .seeMore {
         padding: 16px;
-    }
-
-    .SeletorDesktopContainer {
-        display: block;
-        /* background-color: #04ADBF; */
-        margin-bottom: 10px;
-    }
-
-    .SeletorDesktop {
-        margin: 0 auto;
-        display: flex;
-        width: 50%;
-        color: #00e5ff;
-        text-align: center;
     }
 
     .seeMore:hover {
